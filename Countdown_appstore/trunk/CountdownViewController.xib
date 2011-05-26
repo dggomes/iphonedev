@@ -97,7 +97,7 @@
 					<object class="IBUITextField" id="545705095">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{150, 83}, {117, 31}}</string>
+						<string key="NSFrame">{{166, 83}, {117, 31}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="657180385"/>
@@ -123,7 +123,7 @@
 					<object class="IBUITextField" id="994816735">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{150, 132}, {117, 31}}</string>
+						<string key="NSFrame">{{166, 132}, {117, 31}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="114400744"/>
@@ -150,7 +150,7 @@
 						<string key="NSFrame">{{38, 36}, {111, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="780536950"/>
+						<reference key="NSNextKeyView"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="205327269">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MCAwAA</bytes>
@@ -197,7 +197,7 @@
 					<object class="IBUILabel" id="657180385">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{38, 137}, {80, 21}}</string>
+						<string key="NSFrame">{{38, 137}, {105, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="994816735"/>
@@ -207,7 +207,7 @@
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">hh:mm:ss</string>
+						<string key="IBUIText">hh:mm:ss AM</string>
 						<reference key="IBUIFont" ref="672152470"/>
 						<reference key="IBUITextColor" ref="211952112"/>
 						<nil key="IBUIHighlightedColor"/>
@@ -220,7 +220,7 @@
 						<string key="NSFrame">{{38, 207}, {130, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="883235581"/>
+						<reference key="NSNextKeyView" ref="926738312"/>
 						<reference key="IBUIBackgroundColor" ref="205327269"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -243,7 +243,7 @@
 						<string key="NSFrame">{{38, 267}, {130, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="386839865"/>
+						<reference key="NSNextKeyView" ref="24857885"/>
 						<reference key="IBUIBackgroundColor" ref="205327269"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -263,16 +263,17 @@
 					<object class="IBUILabel" id="926738312">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{132, 227.5}, {140, 28}}</string>
+						<string key="NSFrame">{{132, 226}, {140, 28}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="883235581"/>
 						<reference key="IBUIBackgroundColor" ref="205327269"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">dd/mm/yyyy hh:mm:ss</string>
+						<string key="IBUIText">dd/mm/yyyy hh:mm:ss a</string>
 						<object class="NSFont" key="IBUIFont" id="307821733">
 							<string key="NSName">Helvetica</string>
 							<double key="NSSize">12</double>
@@ -290,13 +291,14 @@
 						<string key="NSFrame">{{132, 295.5}, {140, 22}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView" ref="386839865"/>
 						<reference key="IBUIBackgroundColor" ref="205327269"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">dd/mm/yyyy hh:mm:ss</string>
+						<string key="IBUIText">dd/mm/yyyy hh:mm:ss a</string>
 						<reference key="IBUIFont" ref="307821733"/>
 						<reference key="IBUITextColor" ref="211952112"/>
 						<nil key="IBUIHighlightedColor"/>
@@ -401,6 +403,15 @@
 					</object>
 					<int key="connectionID">87</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">doAlert:</string>
+						<reference key="source" ref="994816735"/>
+						<reference key="destination" ref="843779117"/>
+						<int key="IBEventType">20</int>
+					</object>
+					<int key="connectionID">89</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -428,16 +439,16 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="298955383"/>
-							<reference ref="386839865"/>
 							<reference ref="893821794"/>
 							<reference ref="545705095"/>
 							<reference ref="994816735"/>
-							<reference ref="926738312"/>
 							<reference ref="24857885"/>
 							<reference ref="114400744"/>
 							<reference ref="883235581"/>
 							<reference ref="780536950"/>
 							<reference ref="657180385"/>
+							<reference ref="926738312"/>
+							<reference ref="386839865"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -553,7 +564,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">87</int>
+			<int key="maxID">89</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -598,9 +609,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>bg</string>
-							<string>countdownDate</string>
 							<string>countdownDateLabel</string>
-							<string>countdownTime</string>
 							<string>currentDateLabel</string>
 							<string>startCountdown</string>
 							<string>userInputCountdownDate</string>
@@ -609,9 +618,7 @@
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIImageView</string>
-							<string>UITextField</string>
 							<string>UILabel</string>
-							<string>UITextField</string>
 							<string>UILabel</string>
 							<string>UIButton</string>
 							<string>UITextField</string>
@@ -623,9 +630,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>bg</string>
-							<string>countdownDate</string>
 							<string>countdownDateLabel</string>
-							<string>countdownTime</string>
 							<string>currentDateLabel</string>
 							<string>startCountdown</string>
 							<string>userInputCountdownDate</string>
@@ -638,16 +643,8 @@
 								<string key="candidateClassName">UIImageView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
-								<string key="name">countdownDate</string>
-								<string key="candidateClassName">UITextField</string>
-							</object>
-							<object class="IBToOneOutletInfo">
 								<string key="name">countdownDateLabel</string>
 								<string key="candidateClassName">UILabel</string>
-							</object>
-							<object class="IBToOneOutletInfo">
-								<string key="name">countdownTime</string>
-								<string key="candidateClassName">UITextField</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">currentDateLabel</string>

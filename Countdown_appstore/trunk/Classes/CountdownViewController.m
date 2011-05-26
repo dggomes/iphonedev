@@ -43,8 +43,6 @@
     NSString *countdownDateString = userInputCountdownDate.text;
     NSString *countdownTimeString = userInputCountdownTime.text;
     NSString *countdownDateTimeString = [NSString stringWithFormat:@"%@ %@", countdownDateString, countdownTimeString]; 
-    
-    //include selector to AM/PM
 
 // writing labels
     
@@ -64,22 +62,81 @@
     int timetoGoDays = [timetoGo day];
     int timetoGoHours = [timetoGo hour];
     int timetoGoMinutes = [timetoGo minute];
-    int timetoGoSeconds = [timetoGo second];   
 
-    // howt to show just the fields with value? do we need to calculate timetogo in seconds to discover which fields to present?
-
-    
 // showing alert    
 
     // IF RULES        
     
-    // rule1: years <= 0
-    // rule2: years <= 0 && months <= 0
-    // rule3: years <= 0 && months <= 0 && days <= 0
-    // rule4: years <= 0 && months <= 0 && days <= 0 && hours <= 0
-    // rule5: years <= 0 && months <= 0 && days <= 0 && hours <= 0 && minutes <= 0
+    // rule1: years <= 0 && months <= 0 && days <= 0 && hours <= 0 && minutes <= 0 -> invalid
     
-    // create rule for plural; create rule for lack of AM/PM
+    // rule2a: years <= 0 && months <= 0 && days <= 0 && hours <= 0 && minutes = 1 -> just minute
+    // rule2b: years <= 0 && months <= 0 && days <= 0 && hours <= 0 -> just minutes
+    
+    // rule3a: years <= 0 && months <= 0 && days <= 0 && hours = 1 && minutes = 1 -> hour and minute
+    // rule3b: years <= 0 && months <= 0 && days <= 0 && hours = 1 -> hour and minutes
+    // rule3c: years <= 0 && months <= 0 && days <= 0 && minutes = 1 -> hours and minute
+    // rule3d: years <= 0 && months <= 0 && days <= 0 -> hours and minutes
+
+    // rule4a: years <= 0 && months <= 0 && minutes = 1 -> days, hours and minute
+    // rule4b: years <= 0 && months <= 0 -> days, hours and minutes
+    // rule4c: years <= 0 && months <= 0 && hours = 1 && minutes = 1 -> days, hour and minute
+    // rule4d: years <= 0 && months <= 0 && hours = 1 -> days, hour and minutes
+    // rule4e: years <= 0 && months <= 0 && days = 1 && minutes = 1 -> day, hours and minute
+    // rule4f: years <= 0 && months <= 0 && days = 1 -> day, hours and minutes
+    // rule4g: years <= 0 && months <= 0 && days = 1 && days = 1 && minutes = 1 -> day, hour and minute
+    // rule4h: years <= 0 && months <= 0 && days = 1 && days = 1 -> day, hour and minutes
+    
+    // rule5a: years <= 0 && minutes = 1 -> months, days, hours and minute
+    // rule5b: years <= 0 -> months, days, hours and minutes
+    // rule5c: years <= 0 && hours = 1 && minutes = 1 -> months, days, hour and minute
+    // rule5d: years <= 0 && hours = 1 -> months, days, hour and minutes
+    // rule5e: years <= 0 && days = 1 && minutes = 1 -> months, day, hours and minute
+    // rule5f: years <= 0 && days = 1 -> months, day, hours and minutes
+    // rule5g: years <= 0 && days = 1 && days = 1 && minutes = 1 -> months, day, hour and minute
+    // rule5h: years <= 0 && days = 1 && days = 1 -> month, day, hour and minutes
+    // rule5i: years <= 0 && months = 1 && minutes = 1 -> month, days, hours and minute
+    // rule5j: years <= 0 && months = 1 -> month, days, hours and minutes
+    // rule5k: years <= 0 && months = 1 && hours = 1 && minutes = 1 -> month, days, hour and minute
+    // rule5l: years <= 0 && months = 1 && hours = 1 -> month, days, hour and minutes
+    // rule5m: years <= 0 && months = 1 && days = 1 && minutes = 1 -> month, day, hours and minute
+    // rule5n: years <= 0 && months = 1 && days = 1 -> month, day, hours and minutes
+    // rule5o: years <= 0 && months = 1 && days = 1 && days = 1 && minutes = 1 -> month, day, hour and minute
+    // rule5p: years <= 0 && months = 1 && days = 1 && days = 1 -> month, day, hour and minutes
+
+    // rule6a: years > 0 && minutes = 1 -> years, months, days, hours and minute
+    // rule6b: years > 0 && -> years, months, days, hours and minutes
+    // rule6c: years > 0 && hours = 1 && minutes = 1 -> years, months, days, hour and minute
+    // rule6d: years > 0 && hours = 1 -> years, months, days, hour and minutes
+    // rule6e: years > 0 && days = 1 && minutes = 1 -> years, months, day, hours and minute
+    // rule6f: years > 0 && days = 1 -> years, months, day, hours and minutes
+    // rule6g: years > 0 && days = 1 && days = 1 && minutes = 1 -> years, months, day, hour and minute
+    // rule6h: years > 0 && days = 1 && days = 1 -> years, month, day, hour and minutes
+    // rule6i: years > 0 && months = 1 && minutes = 1 -> years, month, days, hours and minute
+    // rule6j: years > 0 && months = 1 -> years, month, days, hours and minutes
+    // rule6k: years > 0 && months = 1 && hours = 1 && minutes = 1 -> years, month, days, hour and minute
+    // rule6l: years > 0 && months = 1 && hours = 1 -> years, month, days, hour and minutes
+    // rule6m: years > 0 && months = 1 && days = 1 && minutes = 1 -> years, month, day, hours and minute
+    // rule6n: years > 0 && months = 1 && days = 1 -> years, month, day, hours and minutes
+    // rule6o: years > 0 && months = 1 && days = 1 && days = 1 && minutes = 1 -> years, month, day, hour and minute
+    // rule6p: years > 0 && months = 1 && days = 1 && days = 1 -> years, month, day, hour and minutes    
+    // rule6aa: years = 1 && minutes = 1 -> year, months, days, hours and minute
+    // rule6bb: years = 1 && -> year, months, days, hours and minutes
+    // rule6cc: years = 1 && hours = 1 && minutes = 1 -> year, months, days, hour and minute
+    // rule6dd: years = 1 && hours = 1 -> year, months, days, hour and minutes
+    // rule6ee: years = 1 && days = 1 && minutes = 1 -> year, months, day, hours and minute
+    // rule6ff: years = 1 && days = 1 -> year, months, day, hours and minutes
+    // rule6gg: years = 1 && days = 1 && days = 1 && minutes = 1 -> year, months, day, hour and minute
+    // rule6hh: years = 1 && days = 1 && days = 1 -> year, month, day, hour and minutes
+    // rule6ii: years = 1 && months = 1 && minutes = 1 -> year, month, days, hours and minute
+    // rule6jj: years = 1 && months = 1 -> year, month, days, hours and minutes
+    // rule6kk: years = 1 && months = 1 && hours = 1 && minutes = 1 -> year, month, days, hour and minute
+    // rule6ll: years = 1 && months = 1 && hours = 1 -> year, month, days, hour and minutes
+    // rule6mm: years = 1 && months = 1 && days = 1 && minutes = 1 -> year, month, day, hours and minute
+    // rule6nn: years = 1 && months = 1 && days = 1 -> year, month, day, hours and minutes
+    // rule6oo: years = 1 && months = 1 && days = 1 && days = 1 && minutes = 1 -> year, month, day, hour and minute
+    // rule6pp: years = 1 && months = 1 && days = 1 && days = 1 -> year, month, day, hour and minutes
+
+    // rule6: standard -> years, months, days, hours and minutes
 
     // rule1: years <= 0 && months <= 0 && days <= 0  && hours <=0 && minutes <=0   
     
@@ -161,7 +218,6 @@
         
 // RELEASE STRINGS
     
-//    [countdownDate release];
     [dateformat release];
     [dateformatToCompare release];
     [gregorian release];
