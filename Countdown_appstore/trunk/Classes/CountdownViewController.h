@@ -16,6 +16,7 @@
     IBOutlet UITextField *userInputCountdownTime;
     IBOutlet UILabel *currentDateLabel;
     IBOutlet UILabel *countdownDateLabel;
+
 }
 
 @property (retain, nonatomic) IBOutlet UIButton *startCountdown;

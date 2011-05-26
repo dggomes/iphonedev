@@ -28,255 +28,140 @@
     
 	NSDate *currentDate = [NSDate date];
 	NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
-	[dateformat setDateFormat:@"dd/MM/yyyy hh:mm:ss"];
-
+	[dateformat setDateFormat:@"dd/MM/yyyy hh:mm:ss a"];
     
     NSDateFormatter *dateformatToCompare = [[NSDateFormatter alloc] init];
-	 [dateformatToCompare setDateFormat:@"dd/MM/yyyy hh:mm"];
+	 [dateformatToCompare setDateFormat:@"dd/MM/yyyy hh:mm a"];
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 	int unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     
-// inserting userinput to labels
+    NSString *currentDateString = [dateformat stringFromDate:currentDate];
+    
+// converting userInput to string 
     
     NSString *countdownDateString = userInputCountdownDate.text;
     NSString *countdownTimeString = userInputCountdownTime.text;
     NSString *countdownDateTimeString = [NSString stringWithFormat:@"%@ %@", countdownDateString, countdownTimeString]; 
+    
+    //include selector to AM/PM
+
+// writing labels
+    
     countdownDateLabel.text=countdownDateTimeString;
-    
-    
+    currentDateLabel.text=currentDateString;
+        
 // converting string to date
     
     NSDate *countdownDate = [dateformat dateFromString:countdownDateTimeString];
     
-// calculating timeto    
+// calculating timetoGo    
 
 	NSDateComponents *timetoGo = [gregorian components:unitFlags fromDate:currentDate toDate:countdownDate options:0];
     
-    // showing alert
-
-    UIAlertView*alert = [[UIAlertView alloc]
-                         initWithTitle:@"Countdown!"
-                         message:nil
-//                         message:[NSString stringWithFormat:@"%02d years, %02d months, %02d days, %02d hours, %02 minutes, %02 seconds", timetoGo.year, timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.second]
-                         delegate:nil
-                         cancelButtonTitle:@"Fechar"
-                         otherButtonTitles:nil];
-    [alert show];
-    [alert release];
-
-
-// howt to show just the fields with value? do we need to calculate timetogo in seconds to discover which fields to present?
-    
-//    transformar year, hours, etc em INT
-//    If o int maior que 1... mostrar field, otherwise nao mostrarx ??
-    
-/*
-    
-// calculating timetoGo in seconds    
-    
-    //timetoGo
-    
+    int timetoGoYears = [timetoGo year];
+    int timetoGoMonths = [timetoGo month];
     int timetoGoDays = [timetoGo day];
     int timetoGoHours = [timetoGo hour];
     int timetoGoMinutes = [timetoGo minute];
     int timetoGoSeconds = [timetoGo second];   
-    
-    //convert timetoGoDays to seconds
- 
-    #define SECOND 1
-    #define MINUTE (60 * SECOND)
-    #define HOUR (60 * MINUTE)
-    #define DAY (24 * HOUR)
-    #define MONTH (30 * DAY)
-    
-    int daystoGoinSeconds = (timetoGoDays * DAY);
 
-    int hourstoGoinSeconds = (timetoGoHours * HOUR);
+    // howt to show just the fields with value? do we need to calculate timetogo in seconds to discover which fields to present?
 
-    int minutestoGoinSeconds = (timetoGoMinutes * MINUTE);
+    
+// showing alert    
 
-    //get total seconds
+    // IF RULES        
     
-    int timetoGoDaysinSeconds = (daystoGoinSeconds + hourstoGoinSeconds + minutestoGoinSeconds + timetoGoSeconds);
+    // rule1: years <= 0
+    // rule2: years <= 0 && months <= 0
+    // rule3: years <= 0 && months <= 0 && days <= 0
+    // rule4: years <= 0 && months <= 0 && days <= 0 && hours <= 0
+    // rule5: years <= 0 && months <= 0 && days <= 0 && hours <= 0 && minutes <= 0
+    
+    // create rule for plural; create rule for lack of AM/PM
 
-// IF RULES        
+    // rule1: years <= 0 && months <= 0 && days <= 0  && hours <=0 && minutes <=0   
     
-    // rule1: Birthday
-    // rule2: AnniversaryDayMay
-    // rule3: AnnyversaryDayJun
-    // rule4: ValentineDay
-    // rule5: >=40 days so >= 3456000 seconds
-    // rule6: >30 and <40 days so > 2592000 and < 3456000 seconds
-    // rule7: >15 and <=30 days so > 1296000 and < 2592000 seconds
-    // rule8: >7 and <=15 days so > 6048000 and < 1296000 seconds
-    // rule9: >1 and <7 days so > 86400 and < 1296000 seconds
-    // rule10: >0 and <=1 days so = 86400 seconds
-    // rule11: <0 days so = <0 seconds
+    if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoHours <=0) && (timetoGoMinutes <=0)){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Countdown"
+                             message:[NSString stringWithFormat:@"Date invalid"]
+                             delegate:nil
+                             cancelButtonTitle:@"Close"
+                             otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }  
     
-    //rule1:
+    // rule2: years <= 0 && months <= 0 && days <= 0  && hours <=0
     
-    if ([currentDateString isEqualToString:@"12/05/2011"]){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule1!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}     
+    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoHours <=0)){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Countdown"
+                             message:[NSString stringWithFormat:@"%02d minutes remaining", timetoGo.minute]
+                             delegate:nil
+                             cancelButtonTitle:@"Close"
+                             otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }    
 
-    // rule2: AnniversaryDayMay
+    // rule3: years <= 0 && months <= 0 && days <= 0   
     
-    else if ([currentDateString isEqualToString:@"11/05/2011"]){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule2!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}     
-
-    // rule3: AnnyversaryDayJun    
-    
-    else if ([currentDateString isEqualToString:@"11/06/2011"]){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule3!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}     
-
-    // rule4: ValentineDay
-    
-    else if ([currentDateString isEqualToString:@"12/06/2011"]){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule4!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}         
-
-    // rule5: >=40 days so >= 3456000 seconds    
-    
-    else if (timetoGoDaysinSeconds >= 3456000){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule5!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}     
-
-    // rule6: >30 and <40 days so > 2592000 and < 3456000 seconds
-    
-    else if ((timetoGoDaysinSeconds > 2592000)&&(timetoGoDaysinSeconds < 3456000)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule6!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}         
-    
-    // rule7: >15 and <=30 days so > 1296000 and < 2592000 seconds
-
-    else if ((timetoGoDaysinSeconds > 1296000)&&(timetoGoDaysinSeconds < 2592000)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule7!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}         
-    
-    // rule8: >7 and <=15 days so > 6048000 and < 1296000 seconds - BUGGED
-    
-    else if ((timetoGoDaysinSeconds > 604800)&&(timetoGoDaysinSeconds < 1296000)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule8!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}         
-
-    // rule9: >1 and <7 days so > 86400 and < 604800 seconds
-    
-    else if ((timetoGoDaysinSeconds > 86400)&&(timetoGoDaysinSeconds < 604800)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule9!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}         
-    
-    
-    // rule10: >0 and <=1 days so = >0 and <= 86400 seconds
-    
-    else if ((timetoGoDaysinSeconds > 0)&&(timetoGoDaysinSeconds <= 86400)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule10!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}         
-    
-    // rule11: <0 days so = <0 seconds
-    
-    else if (timetoGoDaysinSeconds < 0){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Rule11!"
-							 message:nil
-							 delegate:nil
-							 cancelButtonTitle:@"Fechar"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}         
-    
-    // general rule
-    
-    else  { 
-		UIAlertView*alert =[[UIAlertView alloc]
-							initWithTitle:@"General rule!"
-							message:nil
-							delegate:nil 
-							cancelButtonTitle:@"Fechar"
-							otherButtonTitles:nil];
-		[alert show];
-		[alert release]; 
-        
+    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0)){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Countdown"
+                             message:[NSString stringWithFormat:@"%02d hours, %02d minutes remaining", timetoGo.hour, timetoGo.minute]
+                             delegate:nil
+                             cancelButtonTitle:@"Close"
+                             otherButtonTitles:nil];
+        [alert show];
+        [alert release];
     }
-     
-     */
     
+    // rule4: years <= 0 && months <= 0
+    
+    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0)){
+		UIAlertView*alert = [[UIAlertView alloc]
+							 initWithTitle:@"Countdown"
+                             message:[NSString stringWithFormat:@"%02d days, %02d hours, %02d minutes remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
+							 delegate:nil
+							 cancelButtonTitle:@"Close"
+							 otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+    }
+    
+    //rule5: years <= 0
+    
+    else if (timetoGoYears <= 0){
+		UIAlertView*alert = [[UIAlertView alloc]
+							 initWithTitle:@"Countdown"
+                             message:[NSString stringWithFormat:@"%02d months, %02d days, %02d hours, %02d minutes remaining", timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.minute]
+							 delegate:nil
+							 cancelButtonTitle:@"Close"
+							 otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}     
+    
+    // rule6: standard
+    
+    else {
+		UIAlertView*alert = [[UIAlertView alloc]
+							 initWithTitle:@"Countdown"
+                             message:[NSString stringWithFormat:@"%02d years, %02d months, %02d days, %02d hours, %02d minutes remaining", timetoGo.year, timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.minute]
+							 delegate:nil
+							 cancelButtonTitle:@"Close"
+							 otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+	}          
+        
 // RELEASE STRINGS
     
-    [countdownDate release];
+//    [countdownDate release];
     [dateformat release];
     [dateformatToCompare release];
     [gregorian release];
