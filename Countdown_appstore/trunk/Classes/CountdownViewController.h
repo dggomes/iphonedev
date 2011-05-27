@@ -16,6 +16,7 @@
     IBOutlet UITextField *userInputCountdownTime;
     IBOutlet UILabel *currentDateLabel;
     IBOutlet UILabel *countdownDateLabel;
+    IBOutlet UILabel *currentMessageLabel;
 
 }
 
@@ -25,6 +26,7 @@
 @property (retain, nonatomic) IBOutlet UITextField *userInputCountdownTime;
 @property (retain, nonatomic) IBOutlet UILabel *currentDateLabel;
 @property (retain, nonatomic) IBOutlet UILabel *countdownDateLabel;
+@property (retain, nonatomic) IBOutlet UILabel *currentMessageLabel;
 
 -(IBAction)doAlert:(id)sender;
 - (IBAction) hideKeyboard:(id)sender;

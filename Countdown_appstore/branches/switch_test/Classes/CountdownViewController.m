@@ -64,13 +64,17 @@
     
 // creating messages
 
-//    NSString *message = [NSString stringWithFormat:@"%02d years, %02d months, %02d days, %02d hours and %02d minutes remaining", timetoGo.year, timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.minute];
      NSString *messageYears = [NSString stringWithFormat:@"%02d years, ", timetoGo.year]; 
      NSString *messageMonths = [NSString stringWithFormat:@"%02d months, ", timetoGo.month];
      NSString *messageDays = [NSString stringWithFormat:@"%02d days, ", timetoGo.day];
      NSString *messageHours = [NSString stringWithFormat:@"%02d hours, ", timetoGo.hour];
      NSString *messageMinutes = [NSString stringWithFormat:@"%02d minutes and ", timetoGo.minute];
      NSString *messageSeconds = [NSString stringWithFormat:@"%02d seconds, ", timetoGo.second];
+
+// TODO:
+//    AM/PM selector
+//    AM/PM validation
+//    userInputs validation
     
 // switching the message
 
@@ -81,11 +85,11 @@
             break;
 
         case 0:  
-            messageYears = NULL;
+            messageYears = @"";
             break;
             
         default:
-            messageYears = @"default years";
+            messageYears = [NSString stringWithFormat:@"%02d years, ", timetoGo.year];
             break;
     }
     
@@ -96,11 +100,11 @@
             break;
             
         case 0:  
-            messageMonths = NULL;
+            messageMonths = @"";
             break;
             
         default:
-            messageMonths = @"default months";
+            messageMonths = [NSString stringWithFormat:@"%02d months, ", timetoGo.month];
             break;
     }
     
@@ -111,11 +115,11 @@
             break;
             
         case 0:  
-            messageDays = NULL;
+            messageDays = @"";
             break;
             
         default:
-            messageDays = @"default days";
+            messageDays = [NSString stringWithFormat:@"%02d days, ", timetoGo.day];
             break;
     }
     
@@ -126,45 +130,46 @@
             break;
             
         case 0:  
-            messageHours = NULL;
+            messageHours = @"";
             break;
             
         default:
-            messageHours = @"default hours";
+            messageHours = [NSString stringWithFormat:@"%02d hours, ", timetoGo.hour];
             break;
     }
     
     switch (timetoGoMinutes) {
             
         case 1:  
-            messageMinutes = [NSString stringWithFormat:@"%02d minute, ", timetoGo.minute];
+            messageMinutes = [NSString stringWithFormat:@"%02d minute and ", timetoGo.minute];
             break;
             
         case 0:  
-            messageMinutes = NULL;
+            messageMinutes = @"";
             break;
             
         default:
-            messageMinutes = @"default minutes";
+            messageMinutes = [NSString stringWithFormat:@"%02d minutes and ", timetoGo.minute];
             break;
+
     }
     
     switch (timetoGoSeconds) {
             
         case 1:  
-            messageSeconds = [NSString stringWithFormat:@"%02d second, ", timetoGo.second];
+            messageSeconds = [NSString stringWithFormat:@"%02d second", timetoGo.second];
             break;
             
         case 0:  
-            messageSeconds = NULL;
+            messageSeconds = @"";
             break;
             
         default:
-            messageSeconds = @"default seconds";
+            messageSeconds = [NSString stringWithFormat:@"%02d seconds", timetoGo.second];
             break;
     }
     
-// combining message - TEST
+// combining message
     
         NSString *message = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", messageYears, messageMonths, messageDays, messageHours, messageMinutes, messageSeconds]; 
     
@@ -176,7 +181,7 @@
 
     UIAlertView*alert = [[UIAlertView alloc]
                          initWithTitle:@"Countdown"
-                         message:@"x"
+                         message: message
                          delegate:nil
                          cancelButtonTitle:@"Close"
                          otherButtonTitles:nil];
@@ -196,7 +201,7 @@
 #pragma mark endofcode
 
 // HIDE KEYBOARDS AFTER RETURN
-// FUNCTION MUST BE ACTIVATED IN THE INTERFACE FOR THE TEXT FIELDS ALSO
+// FUNCTION MUST BE ACTIVATED IN THE INTERFACE FOR THE TEXT FIELDS AS WELL
 
 - (IBAction) hideKeyboard:(id)sender {
 	[userInputCountdownDate resignFirstResponder];
