@@ -16,6 +16,7 @@
 @synthesize userInputCountdownTime;
 @synthesize currentDateLabel;
 @synthesize countdownDateLabel;
+@synthesize currentMessageLabel;
 
 #pragma markstartofcode
 
@@ -59,342 +60,132 @@
     int timetoGoDays = [timetoGo day];
     int timetoGoHours = [timetoGo hour];
     int timetoGoMinutes = [timetoGo minute];
+    int timetoGoSeconds = [timetoGo second];
+    
+// creating messages
 
+//    NSString *message = [NSString stringWithFormat:@"%02d years, %02d months, %02d days, %02d hours and %02d minutes remaining", timetoGo.year, timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.minute];
+     NSString *messageYears = [NSString stringWithFormat:@"%02d years, ", timetoGo.year]; 
+     NSString *messageMonths = [NSString stringWithFormat:@"%02d months, ", timetoGo.month];
+     NSString *messageDays = [NSString stringWithFormat:@"%02d days, ", timetoGo.day];
+     NSString *messageHours = [NSString stringWithFormat:@"%02d hours, ", timetoGo.hour];
+     NSString *messageMinutes = [NSString stringWithFormat:@"%02d minutes and ", timetoGo.minute];
+     NSString *messageSeconds = [NSString stringWithFormat:@"%02d seconds, ", timetoGo.second];
+    
+// switching the message
+
+    switch (timetoGoYears) {
+            
+        case 1:  
+            messageYears = [NSString stringWithFormat:@"%02d year, ", timetoGo.year];
+            break;
+
+        case 0:  
+            messageYears = NULL;
+            break;
+            
+        default:
+            messageYears = @"default years";
+            break;
+    }
+    
+    switch (timetoGoMonths) {
+            
+        case 1:  
+            messageMonths = [NSString stringWithFormat:@"%02d month, ", timetoGo.month];
+            break;
+            
+        case 0:  
+            messageMonths = NULL;
+            break;
+            
+        default:
+            messageMonths = @"default months";
+            break;
+    }
+    
+    switch (timetoGoDays) {
+            
+        case 1:  
+            messageDays = [NSString stringWithFormat:@"%02d day, ", timetoGo.day];
+            break;
+            
+        case 0:  
+            messageDays = NULL;
+            break;
+            
+        default:
+            messageDays = @"default days";
+            break;
+    }
+    
+    switch (timetoGoHours) {
+            
+        case 1:  
+            messageHours = [NSString stringWithFormat:@"%02d hour, ", timetoGo.hour];
+            break;
+            
+        case 0:  
+            messageHours = NULL;
+            break;
+            
+        default:
+            messageHours = @"default hours";
+            break;
+    }
+    
+    switch (timetoGoMinutes) {
+            
+        case 1:  
+            messageMinutes = [NSString stringWithFormat:@"%02d minute, ", timetoGo.minute];
+            break;
+            
+        case 0:  
+            messageMinutes = NULL;
+            break;
+            
+        default:
+            messageMinutes = @"default minutes";
+            break;
+    }
+    
+    switch (timetoGoSeconds) {
+            
+        case 1:  
+            messageSeconds = [NSString stringWithFormat:@"%02d second, ", timetoGo.second];
+            break;
+            
+        case 0:  
+            messageSeconds = NULL;
+            break;
+            
+        default:
+            messageSeconds = @"default seconds";
+            break;
+    }
+    
+// combining message - TEST
+    
+        NSString *message = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", messageYears, messageMonths, messageDays, messageHours, messageMinutes, messageSeconds]; 
+    
+// printing message - for test purposes
+    
+    currentMessageLabel.text=message;
+    
 // showing alert    
 
-    // IF RULES        
+    UIAlertView*alert = [[UIAlertView alloc]
+                         initWithTitle:@"Countdown"
+                         message:@"x"
+                         delegate:nil
+                         cancelButtonTitle:@"Close"
+                         otherButtonTitles:nil];
     
-    // rule1: years <= 0 && months <= 0 && days <= 0 && hours <= 0 && minutes <= 0 -> invalid
-    
-    // rule2a: years <= 0 && months <= 0 && days <= 0 && hours <= 0 && minutes = 1 -> just minute
-    // rule2b: years <= 0 && months <= 0 && days <= 0 && hours <= 0 -> just minutes
-    
-    // rule3a: years <= 0 && months <= 0 && days <= 0 && hours = 1 && minutes = 1 -> hour and minute
-    // rule3b: years <= 0 && months <= 0 && days <= 0 && hours = 1 -> hour and minutes
-    // rule3c: years <= 0 && months <= 0 && days <= 0 && minutes = 1 -> hours and minute
-    // rule3d: years <= 0 && months <= 0 && days <= 0 -> hours and minutes
-
-    // rule4a: years <= 0 && months <= 0 && minutes = 1 -> days, hours and minute
-    // rule4b: years <= 0 && months <= 0 -> days, hours and minutes
-    // rule4c: years <= 0 && months <= 0 && hours = 1 && minutes = 1 -> days, hour and minute
-    // rule4d: years <= 0 && months <= 0 && hours = 1 -> days, hour and minutes
-    // rule4e: years <= 0 && months <= 0 && days = 1 && minutes = 1 -> day, hours and minute
-    // rule4f: years <= 0 && months <= 0 && days = 1 -> day, hours and minutes
-    // rule4g: years <= 0 && months <= 0 && days = 1 && days = 1 && minutes = 1 -> day, hour and minute
-    // rule4h: years <= 0 && months <= 0 && days = 1 && days = 1 -> day, hour and minutes
-    
-    // rule5a: years <= 0 && minutes = 1 -> months, days, hours and minute
-    // rule5b: years <= 0 -> months, days, hours and minutes
-    // rule5c: years <= 0 && hours = 1 && minutes = 1 -> months, days, hour and minute
-    // rule5d: years <= 0 && hours = 1 -> months, days, hour and minutes
-    // rule5e: years <= 0 && days = 1 && minutes = 1 -> months, day, hours and minute
-    // rule5f: years <= 0 && days = 1 -> months, day, hours and minutes
-    // rule5g: years <= 0 && days = 1 && days = 1 && minutes = 1 -> months, day, hour and minute
-    // rule5h: years <= 0 && days = 1 && days = 1 -> month, day, hour and minutes
-    // rule5i: years <= 0 && months = 1 && minutes = 1 -> month, days, hours and minute
-    // rule5j: years <= 0 && months = 1 -> month, days, hours and minutes
-    // rule5k: years <= 0 && months = 1 && hours = 1 && minutes = 1 -> month, days, hour and minute
-    // rule5l: years <= 0 && months = 1 && hours = 1 -> month, days, hour and minutes
-    // rule5m: years <= 0 && months = 1 && days = 1 && minutes = 1 -> month, day, hours and minute
-    // rule5n: years <= 0 && months = 1 && days = 1 -> month, day, hours and minutes
-    // rule5o: years <= 0 && months = 1 && days = 1 && days = 1 && minutes = 1 -> month, day, hour and minute
-    // rule5p: years <= 0 && months = 1 && days = 1 && days = 1 -> month, day, hour and minutes
-
-    // rule6a: years > 0 && minutes = 1 -> years, months, days, hours and minute
-    // rule6b: years > 0 && -> years, months, days, hours and minutes
-    // rule6c: years > 0 && hours = 1 && minutes = 1 -> years, months, days, hour and minute
-    // rule6d: years > 0 && hours = 1 -> years, months, days, hour and minutes
-    // rule6e: years > 0 && days = 1 && minutes = 1 -> years, months, day, hours and minute
-    // rule6f: years > 0 && days = 1 -> years, months, day, hours and minutes
-    // rule6g: years > 0 && days = 1 && days = 1 && minutes = 1 -> years, months, day, hour and minute
-    // rule6h: years > 0 && days = 1 && days = 1 -> years, month, day, hour and minutes
-    // rule6i: years > 0 && months = 1 && minutes = 1 -> years, month, days, hours and minute
-    // rule6j: years > 0 && months = 1 -> years, month, days, hours and minutes
-    // rule6k: years > 0 && months = 1 && hours = 1 && minutes = 1 -> years, month, days, hour and minute
-    // rule6l: years > 0 && months = 1 && hours = 1 -> years, month, days, hour and minutes
-    // rule6m: years > 0 && months = 1 && days = 1 && minutes = 1 -> years, month, day, hours and minute
-    // rule6n: years > 0 && months = 1 && days = 1 -> years, month, day, hours and minutes
-    // rule6o: years > 0 && months = 1 && days = 1 && days = 1 && minutes = 1 -> years, month, day, hour and minute
-    // rule6p: years > 0 && months = 1 && days = 1 && days = 1 -> years, month, day, hour and minutes    
-    // rule6aa: years = 1 && minutes = 1 -> year, months, days, hours and minute
-    // rule6bb: years = 1 && -> year, months, days, hours and minutes
-    // rule6cc: years = 1 && hours = 1 && minutes = 1 -> year, months, days, hour and minute
-    // rule6dd: years = 1 && hours = 1 -> year, months, days, hour and minutes
-    // rule6ee: years = 1 && days = 1 && minutes = 1 -> year, months, day, hours and minute
-    // rule6ff: years = 1 && days = 1 -> year, months, day, hours and minutes
-    // rule6gg: years = 1 && days = 1 && days = 1 && minutes = 1 -> year, months, day, hour and minute
-    // rule6hh: years = 1 && days = 1 && days = 1 -> year, month, day, hour and minutes
-    // rule6ii: years = 1 && months = 1 && minutes = 1 -> year, month, days, hours and minute
-    // rule6jj: years = 1 && months = 1 -> year, month, days, hours and minutes
-    // rule6kk: years = 1 && months = 1 && hours = 1 && minutes = 1 -> year, month, days, hour and minute
-    // rule6ll: years = 1 && months = 1 && hours = 1 -> year, month, days, hour and minutes
-    // rule6mm: years = 1 && months = 1 && days = 1 && minutes = 1 -> year, month, day, hours and minute
-    // rule6nn: years = 1 && months = 1 && days = 1 -> year, month, day, hours and minutes
-    // rule6oo: years = 1 && months = 1 && days = 1 && days = 1 && minutes = 1 -> year, month, day, hour and minute
-    // rule6pp: years = 1 && months = 1 && days = 1 && days = 1 -> year, month, day, hour and minutes
-
-    // rule6: standard -> years, months, days, hours and minutes
-
-    // rule1: years <= 0 && months <= 0 && days <= 0  && hours <=0 && minutes <=0   
-    
-    if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoHours <=0) && (timetoGoMinutes <=0)){
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"Date invalid"]
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];
         [alert show];
         [alert release];
-    }  
     
-    // rule2a: years <= 0 && months <= 0 && days <= 0 && hours <= 0 && minutes = 1 -> just minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoHours <=0) && (timetoGoMinutes =1)){
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d minute remaining", timetoGo.minute]
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];
-        [alert show];
-        [alert release];
-    }    
 
-    // rule2b: years <= 0 && months <= 0 && days <= 0 && hours <= 0 -> just minutes
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoHours <=0)){
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d minutes remaining", timetoGo.minute]
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];
-        [alert show];
-        [alert release];
-    }    
-    
-    // rule3a: years <= 0 && months <= 0 && days <= 0 && hours = 1 && minutes = 1 -> hour and minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoHours =1) && (timetoGoMinutes =1)){
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d hour and %02d minute remaining", timetoGo.hour, timetoGo.minute]
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];
-        [alert show];
-        [alert release];
-    }
-
-    // rule3b: years <= 0 && months <= 0 && days <= 0 && hours = 1 -> hour and minutes
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoHours =1)){
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d hour and %02d minutes remaining", timetoGo.hour, timetoGo.minute]
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];
-        [alert show];
-        [alert release];
-    }
-    
-    // rule3c: years <= 0 && months <= 0 && days <= 0 && minutes = 1 -> hours and minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0) && (timetoGoMinutes =1)){
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d hours and %02d minute remaining", timetoGo.hour, timetoGo.minute]
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];
-        [alert show];
-        [alert release];
-    }
-
-    // rule3d: years <= 0 && months <= 0 && days <= 0 -> hours and minutes
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays <=0)){
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d hours and %02d minutes remaining", timetoGo.hour, timetoGo.minute]
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];
-        [alert show];
-        [alert release];
-    }
-    
-    // rule4a: years <= 0 && months <= 0 && minutes = 1 -> days, hours and minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoMinutes = 1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d days and %02d hours, %02d minute remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-
-    // rule4b: years <= 0 && months <= 0 -> days, hours and minutes
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d days and %02d hours, %02d minutes remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-    
-    // rule4c: years <= 0 && months <= 0 && hours = 1 && minutes = 1 -> days, hour and minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoHours = 1) && (timetoGoMinutes = 1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d days, %02d hour and %02d minute remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-    
-    // rule4d: years <= 0 && months <= 0 && hours = 1 -> days, hour and minutes
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoHours = 1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d days, %02d hour and %02d minutes remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-    
-    // rule4e: years <= 0 && months <= 0 && days = 1 && minutes = 1 -> day, hours and minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays = 1) && (timetoGoMinutes = 1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d day, %02d hours and %02d minute remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-   
-    // rule4f: years <= 0 && months <= 0 && days = 1 -> day, hours and minutes
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays = 1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d day, %02d hours and %02d minutes remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-    
-    // rule4g: years <= 0 && months <= 0 && days = 1 && days = 1 && minutes = 1 -> day, hour and minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays = 1) && (timetoGoMinutes =1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d day, %02d hour and %02d minute remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-    
-    // rule4h: years <= 0 && months <= 0 && days = 1 && days = 1 -> day, hour and minutes
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMonths <= 0) && (timetoGoDays = 1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d day, %02d hour and %02d minutes remaining", timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }
-    
-    
-    //TO DO ->
-    //TO DO ->
-    //TO DO ->
-    //TO DO ->  
-    
-    // rule5a: years <= 0 && minutes = 1 -> months, days, hours and minute
-    // rule5b: years <= 0 -> months, days, hours and minutes
-    // rule5c: years <= 0 && hours = 1 && minutes = 1 -> months, days, hour and minute
-    // rule5d: years <= 0 && hours = 1 -> months, days, hour and minutes
-    // rule5e: years <= 0 && days = 1 && minutes = 1 -> months, day, hours and minute
-    // rule5f: years <= 0 && days = 1 -> months, day, hours and minutes
-    // rule5g: years <= 0 && days = 1 && days = 1 && minutes = 1 -> months, day, hour and minute
-    // rule5h: years <= 0 && days = 1 && days = 1 -> month, day, hour and minutes
-    // rule5i: years <= 0 && months = 1 && minutes = 1 -> month, days, hours and minute
-    // rule5j: years <= 0 && months = 1 -> month, days, hours and minutes
-    // rule5k: years <= 0 && months = 1 && hours = 1 && minutes = 1 -> month, days, hour and minute
-    // rule5l: years <= 0 && months = 1 && hours = 1 -> month, days, hour and minutes
-    // rule5m: years <= 0 && months = 1 && days = 1 && minutes = 1 -> month, day, hours and minute
-    // rule5n: years <= 0 && months = 1 && days = 1 -> month, day, hours and minutes
-    // rule5o: years <= 0 && months = 1 && days = 1 && days = 1 && minutes = 1 -> month, day, hour and minute
-    // rule5p: years <= 0 && months = 1 && days = 1 && days = 1 -> month, day, hour and minutes  
-    
-    
-    // rule5a: years <= 0 && minutes = 1 -> months, days, hours and minute
-    
-    else if ((timetoGoYears <= 0) && (timetoGoMinutes = 1)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d months, %02d days, %02d hours and %02d minute remaining", timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }   
-    
-    // rule5b: years <= 0 -> months, days, hours and minutes
-    
-    else if ((timetoGoYears <= 0)){
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d months, %02d days, %02d hours and %02d minutes remaining", timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-    }   
-    
-    
-    // rule6: standard
-    
-    else {
-		UIAlertView*alert = [[UIAlertView alloc]
-							 initWithTitle:@"Countdown"
-                             message:[NSString stringWithFormat:@"%02d years, %02d months, %02d days, %02d hours, %02d minutes remaining", timetoGo.year, timetoGo.month, timetoGo.day, timetoGo.hour, timetoGo.minute]
-							 delegate:nil
-							 cancelButtonTitle:@"Close"
-							 otherButtonTitles:nil];
-		[alert show];
-		[alert release];
-	}          
-        
-// RELEASE STRINGS
+    // RELEASE STRINGS
     
     [dateformat release];
     [dateformatToCompare release];
