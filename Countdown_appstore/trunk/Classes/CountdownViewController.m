@@ -179,15 +179,61 @@
     
 // showing alert    
 
+    if (([userInputCountdownDate.text length] < 10) && ([userInputCountdownTime.text length] < 11)){
+        
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Please insert a valid date and time"
+                             message: nil
+                             delegate:nil
+                             cancelButtonTitle:@"Close"
+                             otherButtonTitles:nil];    
+        
+        [alert show];
+        [alert release];
+        
+    }
+    
+    else if ([userInputCountdownDate.text length] < 10){
+   
+    UIAlertView*alert = [[UIAlertView alloc]
+                         initWithTitle:@"Please insert a valid date"
+                         message: nil
+                         delegate:nil
+                         cancelButtonTitle:@"Close"
+                         otherButtonTitles:nil];    
+
+        [alert show];
+        [alert release];
+    
+    }
+    
+    else if ([userInputCountdownTime.text length] < 11){
+        
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Please insert a valid time"
+                             message: nil
+                             delegate:nil
+                             cancelButtonTitle:@"Close"
+                             otherButtonTitles:nil];    
+        
+        [alert show];
+        [alert release];
+        
+    }
+    
+    else {
+        
     UIAlertView*alert = [[UIAlertView alloc]
                          initWithTitle:@"Countdown"
                          message: message
                          delegate:nil
                          cancelButtonTitle:@"Close"
                          otherButtonTitles:nil];
-    
+
         [alert show];
         [alert release];
+        
+    }
     
 
     // RELEASE STRINGS
@@ -230,7 +276,6 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 }
-
 
 /*
 // Override to allow orientations other than the default portrait orientation.
