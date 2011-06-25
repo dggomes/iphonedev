@@ -34,7 +34,7 @@
     
     NSString *currentDateString = [dateformatToCompare stringFromDate:[NSDate date]];
     
-    NSString *arrivalDay = [[NSString alloc] initWithString:@"12/10/2011 09:35:00"];
+    NSString *arrivalDay = [[NSString alloc] initWithString:@"17/06/2011 06:05:00"];
  
 // converting string to date
     
