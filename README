@@ -1,3 +1,26 @@
 git add .
 git commit -m "comment"
 git push -u origin master
+
+Global setup:
+Set up git
+  git config --global user.name "Your Name"
+  git config --global user.email dg.gomes@gmail.com
+        
+Next steps:
+  mkdir iphonedev2
+  cd iphonedev2
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:dggomes/iphonedev2.git
+  git push -u origin master
+      
+Existing Git Repo?
+  cd existing_git_repo
+  git remote add origin git@github.com:dggomes/iphonedev2.git
+  git push -u origin master
+
+Config SSH
+  This is usually caused when ssh cannot find your keys. Make sure your key is in the default location, ~/.ssh. If you run ssh-keygen again and just press enter at all 3 prompts it will be placed here automatically. Then you can add the contents of id_rsa.pub to your account. If id_rsa.pub doesn’t work try id_dsa.pub. You might need to generate a new dsa key with ssh-keygen -t dsa if you just have an rsa key. Test running ssh -vT git@github.com and look at the output.
