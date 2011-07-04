@@ -16,10 +16,10 @@
     
 }
 
-// @property (retain, nonatomic) IBOutlet UIButton *startCountdown;
+@property (retain, nonatomic) IBOutlet UIButton *startCountdown;
 @property (retain, nonatomic) IBOutlet UIImageView *bg;
 // @property (retain, nonatomic) IBOutlet UILabel *label1;
 
-// -(IBAction)doAlert:(id)sender;
+ -(IBAction)doAlert:(id)sender;
 
 @end

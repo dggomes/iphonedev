@@ -17,9 +17,9 @@
 		28D7ACF80DDB3853001CB0EB /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */; };
 		501B731C137D9A010001F027 /* fundo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501B731B137D9A010001F027 /* fundo.jpg */; };
 		5087EA6F136CB41800EAF6E5 /* ams_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5087EA6E136CB41800EAF6E5 /* ams_bg.jpg */; };
+		5088989713C1C4FD00598A63 /* gru_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5088989613C1C4FD00598A63 /* gru_bg.jpg */; };
 		50C35A831346A1BA00DE0DB0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C35A821346A1BA00DE0DB0 /* icon.png */; };
 		50D38D1813714936002058F2 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50D38D1713714936002058F2 /* Entitlements.plist */; };
-		50F6A8CA13C01ED9008704FD /* gru_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 50F6A8C913C01ED9008704FD /* gru_bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,9 @@
 		32CA4F630368D1EE00C91783 /* Countdown_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Countdown_Prefix.pch; sourceTree = "<group>"; };
 		501B731B137D9A010001F027 /* fundo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fundo.jpg; sourceTree = "<group>"; };
 		5087EA6E136CB41800EAF6E5 /* ams_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ams_bg.jpg; sourceTree = "<group>"; };
+		5088989613C1C4FD00598A63 /* gru_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gru_bg.jpg; sourceTree = "<group>"; };
 		50C35A821346A1BA00DE0DB0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		50D38D1713714936002058F2 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		50F6A8C913C01ED9008704FD /* gru_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gru_bg.jpg; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Countdown-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Countdown-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +101,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				50F6A8C913C01ED9008704FD /* gru_bg.jpg */,
+				5088989613C1C4FD00598A63 /* gru_bg.jpg */,
 				501B731B137D9A010001F027 /* fundo.jpg */,
 				50C35A821346A1BA00DE0DB0 /* icon.png */,
 				5087EA6E136CB41800EAF6E5 /* ams_bg.jpg */,
@@ -177,7 +177,7 @@
 				50C35A831346A1BA00DE0DB0 /* icon.png in Resources */,
 				501B731C137D9A010001F027 /* fundo.jpg in Resources */,
 				50D38D1813714936002058F2 /* Entitlements.plist in Resources */,
-				50F6A8CA13C01ED9008704FD /* gru_bg.jpg in Resources */,
+				5088989713C1C4FD00598A63 /* gru_bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +243,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "C6E956D3-9A29-4440-A9FE-59124EC5C0F9";
 				SDKROOT = iphoneos4.3;
 			};
 			name = Debug;
@@ -259,6 +260,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "C6E956D3-9A29-4440-A9FE-59124EC5C0F9";
 				SDKROOT = iphoneos4.3;
 			};
 			name = Release;
