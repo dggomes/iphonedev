@@ -29,6 +29,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *currentMessageLabel;
 
 - (IBAction) doAlert:(id)sender;
+// - (IBAction) showDate:(id)sender;
 - (IBAction) hideKeyboard:(id)sender;
 
 @end
