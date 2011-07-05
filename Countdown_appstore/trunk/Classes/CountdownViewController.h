@@ -28,8 +28,6 @@
 @property (retain, nonatomic) IBOutlet UILabel *countdownDateLabel;
 @property (retain, nonatomic) IBOutlet UILabel *currentMessageLabel;
 
-- (IBAction) doAlert:(id)sender;
-// - (IBAction) showDate:(id)sender;
-- (IBAction) hideKeyboard:(id)sender;
+- (IBAction) showDate:(id)sender;
 
 @end

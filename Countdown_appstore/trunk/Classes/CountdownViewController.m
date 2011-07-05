@@ -20,40 +20,31 @@
 
 #pragma markstartofcode
 
--(IBAction)doAlert:(id)sender{
-    
-// getting current date and formatting
-    
+-(IBAction) showDate:(id)sender{
+
 	NSDate *currentDate = [NSDate date];
 	NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
 	[dateformat setDateFormat:@"dd/MM/yyyy hh:mm:ss a"];
     
     NSDateFormatter *dateformatToCompare = [[NSDateFormatter alloc] init];
-	 [dateformatToCompare setDateFormat:@"dd/MM/yyyy hh:mm a"];
+    [dateformatToCompare setDateFormat:@"dd/MM/yyyy hh:mm a"];
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
 	int unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     
     NSString *currentDateString = [dateformat stringFromDate:currentDate];
     
-// converting userInput to string 
+    NSDate *currentDatePicker = [sender date];
+    NSString *currentDatePickerString = [dateformat stringFromDate:currentDatePicker];
+ 
+    // writing labels
     
-    NSString *countdownDateString = userInputCountdownDate.text;
-    NSString *countdownTimeString = userInputCountdownTime.text;
-    NSString *countdownDateTimeString = [NSString stringWithFormat:@"%@ %@", countdownDateString, countdownTimeString]; 
-
-// writing labels
-    
-    countdownDateLabel.text=countdownDateTimeString;
+    countdownDateLabel.text=currentDatePickerString;
     currentDateLabel.text=currentDateString;
-        
-// converting string to date
-    
-    NSDate *countdownDate = [dateformat dateFromString:countdownDateTimeString];
-    
+                
 // calculating timetoGo    
 
-	NSDateComponents *timetoGo = [gregorian components:unitFlags fromDate:currentDate toDate:countdownDate options:0];
+	NSDateComponents *timetoGo = [gregorian components:unitFlags fromDate:currentDate toDate:currentDatePicker options:0];
     
     int timetoGoYears = [timetoGo year];
     int timetoGoMonths = [timetoGo month];
@@ -171,71 +162,24 @@
     
 // combining message
     
-        NSString *message = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", messageYears, messageMonths, messageDays, messageHours, messageMinutes, messageSeconds]; 
+    NSString *message = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", messageYears, messageMonths, messageDays, messageHours, messageMinutes, messageSeconds]; 
     
-// printing message - for test purposes
+// printing message
     
     currentMessageLabel.text=message;
-    
-// showing alert    
+    currentMessageLabel.hidden=NO;
 
-    if (([userInputCountdownDate.text length] < 10) && ([userInputCountdownTime.text length] < 11)){
-        
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Please insert a valid date and time"
-                             message: nil
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];    
-        
-        [alert show];
-        [alert release];
-        
-    }
-    
-    else if ([userInputCountdownDate.text length] < 10){
-   
-    UIAlertView*alert = [[UIAlertView alloc]
-                         initWithTitle:@"Please insert a valid date"
-                         message: nil
-                         delegate:nil
-                         cancelButtonTitle:@"Close"
-                         otherButtonTitles:nil];    
-
-        [alert show];
-        [alert release];
-    
-    }
-    
-    else if ([userInputCountdownTime.text length] < 11){
-        
-        UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Please insert a valid time"
-                             message: nil
-                             delegate:nil
-                             cancelButtonTitle:@"Close"
-                             otherButtonTitles:nil];    
-        
-        [alert show];
-        [alert release];
-        
-    }
-    
-    else {
-        
-    UIAlertView*alert = [[UIAlertView alloc]
+/*    UIAlertView*alert = [[UIAlertView alloc]
                          initWithTitle:@"Countdown"
                          message: message
                          delegate:nil
                          cancelButtonTitle:@"Close"
-                         otherButtonTitles:nil];
-
-        [alert show];
-        [alert release];
-        
-    }
+                         otherButtonTitles:nil];    
     
-
+    [alert show];
+    [alert release];
+    
+*/
     // RELEASE STRINGS
     
     [dateformat release];
@@ -245,14 +189,6 @@
 }
 
 #pragma mark endofcode
-
-// HIDE KEYBOARDS AFTER RETURN
-// FUNCTION MUST BE ACTIVATED IN THE INTERFACE FOR THE TEXT FIELDS AS WELL
-
-- (IBAction) hideKeyboard:(id)sender {
-	[userInputCountdownDate resignFirstResponder];
-    [userInputCountdownTime resignFirstResponder];
-}
 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -274,6 +210,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    currentMessageLabel.hidden=YES;
 	[super viewDidLoad];
 }
 
