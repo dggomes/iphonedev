@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Countdown_tabbedTests' target in the 'Countdown_tabbedTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

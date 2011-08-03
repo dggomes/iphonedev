@@ -18,6 +18,7 @@
 		501B731C137D9A010001F027 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501B731B137D9A010001F027 /* bg.jpg */; };
 		50C35A831346A1BA00DE0DB0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C35A821346A1BA00DE0DB0 /* icon.png */; };
 		50D38D1813714936002058F2 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50D38D1713714936002058F2 /* Entitlements.plist */; };
+		50E240F513C35077004503FF /* img_years.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E240F413C35077004503FF /* img_years.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		501B731B137D9A010001F027 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		50C35A821346A1BA00DE0DB0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		50D38D1713714936002058F2 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		50E240F413C35077004503FF /* img_years.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_years.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Countdown-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Countdown-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				50E240F413C35077004503FF /* img_years.png */,
 				501B731B137D9A010001F027 /* bg.jpg */,
 				50C35A821346A1BA00DE0DB0 /* icon.png */,
 				2899E5210DE3E06400AC0155 /* CountdownViewController.xib */,
@@ -170,6 +173,7 @@
 				50C35A831346A1BA00DE0DB0 /* icon.png in Resources */,
 				501B731C137D9A010001F027 /* bg.jpg in Resources */,
 				50D38D1813714936002058F2 /* Entitlements.plist in Resources */,
+				50E240F513C35077004503FF /* img_years.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

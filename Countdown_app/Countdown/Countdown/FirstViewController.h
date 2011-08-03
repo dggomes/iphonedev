@@ -1,16 +1,17 @@
 //
-//  CountdownViewController.h
+//  FirstViewController.h
 //  Countdown
 //
-//  Created by Daniel Gomes on 30/04/2011.
+//  Created by Daniel Gomes on 03/08/2011.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface CountdownViewController : UIViewController {
 
-	IBOutlet UIButton *startCountdown;
+@interface FirstViewController : UIViewController {
+
+    IBOutlet UIButton *startCountdown;
 	IBOutlet UIImageView *bg;
     IBOutlet UITextField *userInputCountdownDate;
     IBOutlet UITextField *userInputCountdownTime;
@@ -23,6 +24,7 @@
     IBOutlet UILabel *displayLabelMinutes;    
     IBOutlet UILabel *displayLabelSeconds;    
     IBOutlet UIImageView *img_years;
+   
 }
 
 @property (retain, nonatomic) IBOutlet UIButton *startCountdown;

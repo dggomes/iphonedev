@@ -1,14 +1,15 @@
 //
-//  CountdownViewController.m
+//  FirstViewController.m
 //  Countdown
 //
-//  Created by Daniel Gomes on 30/04/2011.
+//  Created by Daniel Gomes on 03/08/2011.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "CountdownViewController.h"
+#import "FirstViewController.h"
 
-@implementation CountdownViewController
+
+@implementation FirstViewController
 
 @synthesize startCountdown;
 @synthesize bg;
@@ -24,10 +25,11 @@
 @synthesize displayLabelSeconds; 
 @synthesize img_years;
 
+
 #pragma markstartofcode
 
 -(IBAction) showDate:(id)sender{
-
+    
 	NSDate *currentDate = [NSDate date];
 	NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
 	[dateformat setDateFormat:@"dd/MM/yyyy hh:mm:ss a"];
@@ -42,14 +44,14 @@
     
     NSDate *currentDatePicker = [sender date];
     NSString *currentDatePickerString = [dateformat stringFromDate:currentDatePicker];
- 
+    
     // writing labels
     
     countdownDateLabel.text=currentDatePickerString;
     currentDateLabel.text=currentDateString;
-                
-// calculating timetoGo    
-
+    
+    // calculating timetoGo    
+    
 	NSDateComponents *timetoGo = [gregorian components:unitFlags fromDate:currentDate toDate:currentDatePicker options:0];
     
     int timetoGoYears = [timetoGo year];
@@ -59,37 +61,37 @@
     int timetoGoMinutes = [timetoGo minute];
     int timetoGoSeconds = [timetoGo second];
     
-// creating messages
-
-     NSString *messageYears = [NSString stringWithFormat:@"%02d years, ", timetoGo.year]; 
-     NSString *messageMonths = [NSString stringWithFormat:@"%02d months, ", timetoGo.month];
-     NSString *messageDays = [NSString stringWithFormat:@"%02d days, ", timetoGo.day];
-     NSString *messageHours = [NSString stringWithFormat:@"%02d hours, ", timetoGo.hour];
-     NSString *messageMinutes = [NSString stringWithFormat:@"%02d minutes and ", timetoGo.minute];
-     NSString *messageSeconds = [NSString stringWithFormat:@"%02d seconds, ", timetoGo.second];
-
-// TODO:
-//    AM/PM selector
-//    AM/PM validation
-//    userInputs validation
+    // creating messages
     
-// switching the message
-
+    NSString *messageYears = [NSString stringWithFormat:@"%02d years, ", timetoGo.year]; 
+    NSString *messageMonths = [NSString stringWithFormat:@"%02d months, ", timetoGo.month];
+    NSString *messageDays = [NSString stringWithFormat:@"%02d days, ", timetoGo.day];
+    NSString *messageHours = [NSString stringWithFormat:@"%02d hours, ", timetoGo.hour];
+    NSString *messageMinutes = [NSString stringWithFormat:@"%02d minutes and ", timetoGo.minute];
+    NSString *messageSeconds = [NSString stringWithFormat:@"%02d seconds, ", timetoGo.second];
+    
+    // TODO:
+    //    AM/PM selector
+    //    AM/PM validation
+    //    userInputs validation
+    
+    // switching the message
+    
     switch (timetoGoYears) {
             
         case 1:  
             messageYears = [NSString stringWithFormat:@"%02d year", timetoGo.year];
-//            img_years.hidden=YES;
+            //            img_years.hidden=YES;
             break;
-
+            
         case 0:  
             messageYears = @"00";
-//            img_years.hidden=NO;
+            //            img_years.hidden=NO;
             break;
             
         default:
             messageYears = [NSString stringWithFormat:@"%02d years", timetoGo.year];
-//            img_years.hidden=YES;
+            //            img_years.hidden=YES;
             break;
     }
     
@@ -151,7 +153,7 @@
         default:
             messageMinutes = [NSString stringWithFormat:@"%02d minutes", timetoGo.minute];
             break;
-
+            
     }
     
     switch (timetoGoSeconds) {
@@ -169,10 +171,10 @@
             break;
     }
     
-// combining message
+    // combining message
     
-//    NSString *message = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", messageYears, messageMonths, messageDays, messageHours, messageMinutes, messageSeconds]; 
-  
+    //    NSString *message = [NSString stringWithFormat:@"%@ %@ %@ %@ %@ %@", messageYears, messageMonths, messageDays, messageHours, messageMinutes, messageSeconds]; 
+    
     NSString *messageYearsDisplay = [NSString stringWithFormat:@"%@", messageYears];
     NSString *messageMonthsDisplay = [NSString stringWithFormat:@"%@", messageMonths];
     NSString *messageDaysDisplay = [NSString stringWithFormat:@"%@", messageDays]; 
@@ -180,11 +182,11 @@
     NSString *messageMinutesDisplay = [NSString stringWithFormat:@"%@", messageMinutes]; 
     NSString *messageSecondsDisplay = [NSString stringWithFormat:@"%@", messageSeconds];     
     
-// printing message
+    // printing message
     
     displayLabelYears.text=messageYearsDisplay;
     displayLabelYears.hidden=NO;
-
+    
     displayLabelMonths.text=messageMonthsDisplay;
     displayLabelMonths.hidden=NO;
     
@@ -201,17 +203,17 @@
     displayLabelSeconds.hidden=NO;
     
     
-/*    UIAlertView*alert = [[UIAlertView alloc]
-                         initWithTitle:@"Countdown"
-                         message: message
-                         delegate:nil
-                         cancelButtonTitle:@"Close"
-                         otherButtonTitles:nil];    
-    
-    [alert show];
-    [alert release];
-    
-*/
+    /*    UIAlertView*alert = [[UIAlertView alloc]
+     initWithTitle:@"Countdown"
+     message: message
+     delegate:nil
+     cancelButtonTitle:@"Close"
+     otherButtonTitles:nil];    
+     
+     [alert show];
+     [alert release];
+     
+     */
     // RELEASE STRINGS
     
     [dateformat release];
@@ -223,61 +225,40 @@
 #pragma mark endofcode
 
 /*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    displayLabelYears.hidden=YES;
-    displayLabelMonths.hidden=YES;
-    displayLabelDays.hidden=YES;
-    displayLabelHours.hidden=YES;
-    displayLabelMinutes.hidden=YES;
-    displayLabelSeconds.hidden=YES;
-//    img_years.hidden=YES;
-	
+- (void)viewDidLoad
+{
     [super viewDidLoad];
 }
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateTointerfaceOrientation:(UIinterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIinterfaceOrientationPortrait);
-}
 */
 
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
+    
+    // Release any cached data, images, etc. that aren't in use.
 }
 
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+
+- (void)viewDidUnload
+{
+    [super viewDidUnload];
+
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
-- (void)dealloc {
-    [UIAlertView dealloc];
-    [NSCalendar dealloc];
-    [NSDateFormatter dealloc];
-    [NSString dealloc];
+
+- (void)dealloc
+{
     [super dealloc];
 }
 
