@@ -8,8 +8,16 @@
 
 #import "SecondViewController.h"
 
-
 @implementation SecondViewController
+@synthesize currentDateLabel;
+@synthesize countdownDateLabel;
+@synthesize displayLabelYears;
+@synthesize displayLabelMonths;
+@synthesize displayLabelDays;
+@synthesize displayLabelHours;
+@synthesize displayLabelMinutes;
+@synthesize displayLabelSeconds;
+
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -34,6 +42,34 @@
     // Release any cached data, images, etc. that aren't in use.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    NSString *currentDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentDateString"];
+    
+    NSString *countDownDateLabelSecondView = [[NSUserDefaults standardUserDefaults] objectForKey:@"countDownDatePickerString"];
+    
+    NSString *messageYearsDisplay = [[NSUserDefaults standardUserDefaults] objectForKey:@"messageYearsDisplay"];
+    
+    NSString *messageMonthsDisplay = [[NSUserDefaults standardUserDefaults] objectForKey:@"messageMonthsDisplay"];
+    
+    NSString *messageDaysDisplay = [[NSUserDefaults standardUserDefaults] objectForKey:@"messageDaysDisplay"];
+    
+    NSString *messageHoursDisplay = [[NSUserDefaults standardUserDefaults] objectForKey:@"messageHoursDisplay"];
+    
+    NSString *messageMinutesDisplay = [[NSUserDefaults standardUserDefaults] objectForKey:@"messageMinutesDisplay"];
+    
+    NSString *messageSecondsDisplay = [[NSUserDefaults standardUserDefaults] objectForKey:@"messageSecondsDisplay"];
+    
+    currentDateLabel.text=currentDateString;
+    countdownDateLabel.text=countDownDateLabelSecondView;
+    displayLabelYears.text=messageYearsDisplay;
+    displayLabelMonths.text=messageMonthsDisplay;
+    displayLabelDays.text=messageDaysDisplay;
+    displayLabelHours.text=messageHoursDisplay;
+    displayLabelMinutes.text=messageMinutesDisplay;
+    displayLabelSeconds.text=messageSecondsDisplay;
+    
+}
 
 - (void)viewDidUnload
 {
