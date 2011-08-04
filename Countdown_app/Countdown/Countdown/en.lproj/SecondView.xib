@@ -291,7 +291,6 @@
 						<string key="NSFrame">{{69, 365}, {60, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
@@ -448,6 +447,54 @@
 						<reference key="destination" ref="526353012"/>
 					</object>
 					<int key="connectionID">40</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">labelYears</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="36927786"/>
+					</object>
+					<int key="connectionID">47</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">labelMonths</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="413505409"/>
+					</object>
+					<int key="connectionID">48</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">labelDays</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="536034635"/>
+					</object>
+					<int key="connectionID">49</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">labelHours</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="527951111"/>
+					</object>
+					<int key="connectionID">50</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">labelMinutes</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="711360467"/>
+					</object>
+					<int key="connectionID">51</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">labelSeconds</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="789496046"/>
+					</object>
+					<int key="connectionID">52</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -637,7 +684,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">46</int>
+			<int key="maxID">52</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -657,9 +704,21 @@
 							<string>displayLabelMonths</string>
 							<string>displayLabelSeconds</string>
 							<string>displayLabelYears</string>
+							<string>labelDays</string>
+							<string>labelHours</string>
+							<string>labelMinutes</string>
+							<string>labelMonths</string>
+							<string>labelSeconds</string>
+							<string>labelYears</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>UILabel</string>
+							<string>UILabel</string>
+							<string>UILabel</string>
+							<string>UILabel</string>
+							<string>UILabel</string>
+							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UILabel</string>
@@ -682,6 +741,12 @@
 							<string>displayLabelMonths</string>
 							<string>displayLabelSeconds</string>
 							<string>displayLabelYears</string>
+							<string>labelDays</string>
+							<string>labelHours</string>
+							<string>labelMinutes</string>
+							<string>labelMonths</string>
+							<string>labelSeconds</string>
+							<string>labelYears</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -715,6 +780,30 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">displayLabelYears</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">labelDays</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">labelHours</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">labelMinutes</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">labelMonths</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">labelSeconds</string>
+								<string key="candidateClassName">UILabel</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">labelYears</string>
 								<string key="candidateClassName">UILabel</string>
 							</object>
 						</object>

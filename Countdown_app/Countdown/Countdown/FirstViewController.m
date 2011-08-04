@@ -55,6 +55,15 @@
     NSString *messageHours = [NSString stringWithFormat:@"%02d hours, ", timetoGo.hour];
     NSString *messageMinutes = [NSString stringWithFormat:@"%02d minutes and ", timetoGo.minute];
     NSString *messageSeconds = [NSString stringWithFormat:@"%02d seconds, ", timetoGo.second];
+    
+    // creating name labels
+    
+    NSString *labelYears = @"00";
+    NSString *labelMonths = @"00";
+    NSString *labelDays = @"00";
+    NSString *labelHours = @"00";
+    NSString *labelMinutes = @"00";
+    NSString *labelSeconds = @"00";
         
     // switching the message
     
@@ -62,16 +71,19 @@
             
         case 1:  
             messageYears = [NSString stringWithFormat:@"%02d", timetoGo.year];
+            labelYears = @"year";
             //            img_years.hidden=YES;
             break;
             
         case 0:  
-            messageYears = @"00 years";
+            messageYears = @"00";
+            labelYears = @"years";
             //            img_years.hidden=NO;
             break;
             
         default:
             messageYears = [NSString stringWithFormat:@"%02d", timetoGo.year];
+            labelYears = @"years";
             //            img_years.hidden=YES;
             break;
     }
@@ -80,14 +92,17 @@
             
         case 1:  
             messageMonths = [NSString stringWithFormat:@"%02d", timetoGo.month];
+            labelMonths = @"month";
             break;
             
         case 0:  
-            messageMonths = @"00 months";
+            messageMonths = @"00";
+            labelMonths = @"months";
             break;
             
         default:
             messageMonths = [NSString stringWithFormat:@"%02d", timetoGo.month];
+            labelMonths = @"months";
             break;
     }
     
@@ -95,14 +110,17 @@
             
         case 1:  
             messageDays = [NSString stringWithFormat:@"%02d", timetoGo.day];
+            labelDays = @"day";
             break;
             
         case 0:  
-            messageDays = @"00 days";
+            messageDays = @"00";
+            labelDays = @"days";
             break;
             
         default:
             messageDays = [NSString stringWithFormat:@"%02d", timetoGo.day];
+            labelDays = @"days";
             break;
     }
     
@@ -110,14 +128,17 @@
             
         case 1:  
             messageHours = [NSString stringWithFormat:@"%02d", timetoGo.hour];
+            labelHours = @"hour";
             break;
             
         case 0:  
-            messageHours = @"00 hours";
+            messageHours = @"00";
+            labelHours = @"hours";
             break;
             
         default:
             messageHours = [NSString stringWithFormat:@"%02d", timetoGo.hour];
+            labelHours = @"hours";
             break;
     }
     
@@ -125,14 +146,17 @@
             
         case 1:  
             messageMinutes = [NSString stringWithFormat:@"%02d", timetoGo.minute];
+            labelMinutes= @"minute";
             break;
             
         case 0:  
-            messageMinutes = @"00 minutes";
+            messageMinutes = @"00";
+            labelMinutes= @"minutes";
             break;
             
         default:
             messageMinutes = [NSString stringWithFormat:@"%02d", timetoGo.minute];
+            labelMinutes= @"minutes";
             break;
             
     }
@@ -141,14 +165,17 @@
             
         case 1:  
             messageSeconds = [NSString stringWithFormat:@"%02d", timetoGo.second];
+            labelSeconds= @"second";
             break;
             
         case 0:  
-            messageSeconds = @"00 seconds";
+            messageSeconds = @"00";
+            labelSeconds= @"seconds";
             break;
             
         default:
             messageSeconds = [NSString stringWithFormat:@"%02d", timetoGo.second];
+            labelSeconds= @"seconds";
             break;
     }
     
@@ -169,6 +196,13 @@
     [[NSUserDefaults standardUserDefaults] setObject:messageHoursDisplay forKey:@"messageHoursDisplay"];
     [[NSUserDefaults standardUserDefaults] setObject:messageMinutesDisplay forKey:@"messageMinutesDisplay"];
     [[NSUserDefaults standardUserDefaults] setObject:messageSecondsDisplay forKey:@"messageSecondsDisplay"];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:labelYears forKey:@"labelYears"];
+    [[NSUserDefaults standardUserDefaults] setObject:labelMonths forKey:@"labelMonths"];
+    [[NSUserDefaults standardUserDefaults] setObject:labelDays forKey:@"labelDays"];
+    [[NSUserDefaults standardUserDefaults] setObject:labelHours forKey:@"labelHours"];
+    [[NSUserDefaults standardUserDefaults] setObject:labelMinutes forKey:@"labelMinutes"];
+    [[NSUserDefaults standardUserDefaults] setObject:labelSeconds forKey:@"labelSeconds"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
 

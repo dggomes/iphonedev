@@ -18,7 +18,13 @@
     IBOutlet UILabel *displayLabelDays;
     IBOutlet UILabel *displayLabelHours;
     IBOutlet UILabel *displayLabelMinutes;    
-    IBOutlet UILabel *displayLabelSeconds;      
+    IBOutlet UILabel *displayLabelSeconds;
+    IBOutlet UILabel *labelYears;
+    IBOutlet UILabel *labelMonths;
+    IBOutlet UILabel *labelDays;
+    IBOutlet UILabel *labelHours;
+    IBOutlet UILabel *labelMinutes;    
+    IBOutlet UILabel *labelSeconds;  
 }
 
 @property (retain, nonatomic) IBOutlet UILabel *currentDateLabel;
@@ -29,5 +35,11 @@
 @property (retain, nonatomic) IBOutlet UILabel *displayLabelHours;
 @property (retain, nonatomic) IBOutlet UILabel *displayLabelMinutes;
 @property (retain, nonatomic) IBOutlet UILabel *displayLabelSeconds;
+@property (retain, nonatomic) IBOutlet UILabel *labelYears;
+@property (retain, nonatomic) IBOutlet UILabel *labelMonths;
+@property (retain, nonatomic) IBOutlet UILabel *labelDays;
+@property (retain, nonatomic) IBOutlet UILabel *labelHours;
+@property (retain, nonatomic) IBOutlet UILabel *labelMinutes;
+@property (retain, nonatomic) IBOutlet UILabel *labelSeconds;
 
 @end

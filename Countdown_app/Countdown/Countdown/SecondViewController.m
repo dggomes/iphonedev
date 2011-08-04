@@ -17,7 +17,12 @@
 @synthesize displayLabelHours;
 @synthesize displayLabelMinutes;
 @synthesize displayLabelSeconds;
-
+@synthesize labelYears;
+@synthesize labelMonths;
+@synthesize labelDays;
+@synthesize labelHours;
+@synthesize labelMinutes;
+@synthesize labelSeconds;
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -60,6 +65,13 @@
     
     NSString *messageSecondsDisplay = [[NSUserDefaults standardUserDefaults] objectForKey:@"messageSecondsDisplay"];
     
+    NSString *labelYearsString = [[NSUserDefaults standardUserDefaults] objectForKey:@"labelYears"];
+    NSString *labelMonthsString = [[NSUserDefaults standardUserDefaults] objectForKey:@"labelMonths"];
+    NSString *labelDaysString = [[NSUserDefaults standardUserDefaults] objectForKey:@"labelDays"];
+    NSString *labelHoursString = [[NSUserDefaults standardUserDefaults] objectForKey:@"labelHours"];
+    NSString *labelMinutesString = [[NSUserDefaults standardUserDefaults] objectForKey:@"labelMinutes"];
+    NSString *labelSecondsString = [[NSUserDefaults standardUserDefaults] objectForKey:@"labelSeconds"];
+    
     currentDateLabel.text=currentDateString;
     countdownDateLabel.text=countDownDateLabelSecondView;
     displayLabelYears.text=messageYearsDisplay;
@@ -68,6 +80,12 @@
     displayLabelHours.text=messageHoursDisplay;
     displayLabelMinutes.text=messageMinutesDisplay;
     displayLabelSeconds.text=messageSecondsDisplay;
+    labelYears.text=labelYearsString;
+    labelMonths.text=labelMonthsString;
+    labelDays.text=labelDaysString;
+    labelHours.text=labelHoursString;
+    labelMinutes.text=labelMinutesString;
+    labelSeconds.text=labelSecondsString;
     
 }
 
