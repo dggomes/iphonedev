@@ -44,6 +44,135 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     
+    // retrieving timetoGo
+    
+    int *timetoGoYears = [[NSUserDefaults standardUserDefaults] objectForKey:@"timetoGoYears"];
+    
+    int *timetoGoMonths = [[NSUserDefaults standardUserDefaults] objectForKey:@"timetoGoMonths"];
+    
+    int *timetoGoDays = [[NSUserDefaults standardUserDefaults] objectForKey:@"timetoGoDays"];
+    
+    int *timetoGoHours = [[NSUserDefaults standardUserDefaults] objectForKey:@"timetoGoHours"];
+    
+    int *timetoGoMinutes = [[NSUserDefaults standardUserDefaults] objectForKey:@"timetoGoMinutes"];
+    
+    int *timetoGoSeconds = [[NSUserDefaults standardUserDefaults] objectForKey:@"timetoGoSeconds"];
+    
+    // creating messages
+    
+    NSString *messageYears = [NSString stringWithFormat:@"%02d years, ", timetoGo.year]; 
+    NSString *messageMonths = [NSString stringWithFormat:@"%02d months, ", timetoGo.month];
+    NSString *messageDays = [NSString stringWithFormat:@"%02d days, ", timetoGo.day];
+    NSString *messageHours = [NSString stringWithFormat:@"%02d hours, ", timetoGo.hour];
+    NSString *messageMinutes = [NSString stringWithFormat:@"%02d minutes and ", timetoGo.minute];
+    NSString *messageSeconds = [NSString stringWithFormat:@"%02d seconds, ", timetoGo.second];
+    
+    // switching the message
+    
+    switch (timetoGoYears) {
+            
+        case 1:  
+            messageYears = [NSString stringWithFormat:@"%02d", timetoGo.year];
+            //            img_years.hidden=YES;
+            break;
+            
+        case 0:  
+            messageYears = @"00 years";
+            //            img_years.hidden=NO;
+            break;
+            
+        default:
+            messageYears = [NSString stringWithFormat:@"%02d", timetoGo.year];
+            //            img_years.hidden=YES;
+            break;
+    }
+    
+    switch (timetoGoMonths) {
+            
+        case 1:  
+            messageMonths = [NSString stringWithFormat:@"%02d", timetoGo.month];
+            break;
+            
+        case 0:  
+            messageMonths = @"00 months";
+            break;
+            
+        default:
+            messageMonths = [NSString stringWithFormat:@"%02d", timetoGo.month];
+            break;
+    }
+    
+    switch (timetoGoDays) {
+            
+        case 1:  
+            messageDays = [NSString stringWithFormat:@"%02d", timetoGo.day];
+            break;
+            
+        case 0:  
+            messageDays = @"00 days";
+            break;
+            
+        default:
+            messageDays = [NSString stringWithFormat:@"%02d", timetoGo.day];
+            break;
+    }
+    
+    switch (timetoGoHours) {
+            
+        case 1:  
+            messageHours = [NSString stringWithFormat:@"%02d", timetoGo.hour];
+            break;
+            
+        case 0:  
+            messageHours = @"00 hours";
+            break;
+            
+        default:
+            messageHours = [NSString stringWithFormat:@"%02d", timetoGo.hour];
+            break;
+    }
+    
+    switch (timetoGoMinutes) {
+            
+        case 1:  
+            messageMinutes = [NSString stringWithFormat:@"%02d", timetoGo.minute];
+            break;
+            
+        case 0:  
+            messageMinutes = @"00 minutes";
+            break;
+            
+        default:
+            messageMinutes = [NSString stringWithFormat:@"%02d", timetoGo.minute];
+            break;
+            
+    }
+    
+    switch (timetoGoSeconds) {
+            
+        case 1:  
+            messageSeconds = [NSString stringWithFormat:@"%02d", timetoGo.second];
+            break;
+            
+        case 0:  
+            messageSeconds = @"00 seconds";
+            break;
+            
+        default:
+            messageSeconds = [NSString stringWithFormat:@"%02d", timetoGo.second];
+            break;
+    }
+    
+    // displaying message
+    
+    NSString *messageYearsDisplay = [NSString stringWithFormat:@"%@", messageYears];
+    NSString *messageMonthsDisplay = [NSString stringWithFormat:@"%@", messageMonths];
+    NSString *messageDaysDisplay = [NSString stringWithFormat:@"%@", messageDays]; 
+    NSString *messageHoursDisplay = [NSString stringWithFormat:@"%@", messageHours]; 
+    NSString *messageMinutesDisplay = [NSString stringWithFormat:@"%@", messageMinutes]; 
+    NSString *messageSecondsDisplay = [NSString stringWithFormat:@"%@", messageSeconds];  
+    
+    
     NSString *currentDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentDateString"];
     
     NSString *countDownDateLabelSecondView = [[NSUserDefaults standardUserDefaults] objectForKey:@"countDownDatePickerString"];
