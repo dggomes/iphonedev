@@ -14,18 +14,16 @@
 		5069367C13E968210009D674 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069367B13E968210009D674 /* main.m */; };
 		5069367F13E968210009D674 /* CountdownAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069367E13E968210009D674 /* CountdownAppDelegate.m */; };
 		5069368213E968210009D674 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5069368013E968210009D674 /* MainWindow.xib */; };
-		5069368513E968210009D674 /* DateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069368413E968210009D674 /* DateController.m */; };
-		5069368813E968210009D674 /* CountDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069368713E968210009D674 /* CountDownController.m */; };
-		5069368B13E968210009D674 /* DateController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5069368913E968210009D674 /* DateController.xib */; };
-		5069368E13E968210009D674 /* CountDownController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5069368C13E968210009D674 /* CountDownController.xib */; };
+		5069368513E968210009D674 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069368413E968210009D674 /* FirstViewController.m */; };
+		5069368813E968210009D674 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5069368713E968210009D674 /* SecondViewController.m */; };
+		5069368B13E968210009D674 /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5069368913E968210009D674 /* FirstView.xib */; };
+		5069368E13E968210009D674 /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5069368C13E968210009D674 /* SecondView.xib */; };
 		5069369513E968210009D674 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5069366E13E968210009D674 /* UIKit.framework */; };
 		5069369613E968210009D674 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5069367013E968210009D674 /* Foundation.framework */; };
 		5069369713E968210009D674 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5069367213E968210009D674 /* CoreGraphics.framework */; };
 		5069369F13E968210009D674 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5069369D13E968210009D674 /* InfoPlist.strings */; };
 		506936A213E968210009D674 /* CountdownTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 506936A113E968210009D674 /* CountdownTests.h */; };
 		506936A413E968210009D674 /* CountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 506936A313E968210009D674 /* CountdownTests.m */; };
-		507A794B13EAF3DC00D01ED6 /* TimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507A794913EAF3DC00D01ED6 /* TimeController.m */; };
-		507A794C13EAF3DC00D01ED6 /* TimeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 507A794A13EAF3DC00D01ED6 /* TimeController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,21 +48,18 @@
 		5069367D13E968210009D674 /* CountdownAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownAppDelegate.h; sourceTree = "<group>"; };
 		5069367E13E968210009D674 /* CountdownAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownAppDelegate.m; sourceTree = "<group>"; };
 		5069368113E968210009D674 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		5069368313E968210009D674 /* DateController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateController.h; sourceTree = "<group>"; };
-		5069368413E968210009D674 /* DateController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateController.m; sourceTree = "<group>"; };
-		5069368613E968210009D674 /* CountDownController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownController.h; sourceTree = "<group>"; };
-		5069368713E968210009D674 /* CountDownController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownController.m; sourceTree = "<group>"; };
-		5069368A13E968210009D674 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DateController.xib; sourceTree = "<group>"; };
-		5069368D13E968210009D674 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CountDownController.xib; sourceTree = "<group>"; };
+		5069368313E968210009D674 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		5069368413E968210009D674 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		5069368613E968210009D674 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5069368713E968210009D674 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5069368A13E968210009D674 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		5069368D13E968210009D674 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
 		5069369413E968210009D674 /* CountdownTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountdownTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5069369C13E968210009D674 /* CountdownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CountdownTests-Info.plist"; sourceTree = "<group>"; };
 		5069369E13E968210009D674 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		506936A013E968210009D674 /* CountdownTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CountdownTests-Prefix.pch"; sourceTree = "<group>"; };
 		506936A113E968210009D674 /* CountdownTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountdownTests.h; sourceTree = "<group>"; };
 		506936A313E968210009D674 /* CountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountdownTests.m; sourceTree = "<group>"; };
-		507A794813EAF3DC00D01ED6 /* TimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeController.h; sourceTree = "<group>"; };
-		507A794913EAF3DC00D01ED6 /* TimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeController.m; sourceTree = "<group>"; };
-		507A794A13EAF3DC00D01ED6 /* TimeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,15 +121,12 @@
 				5069367D13E968210009D674 /* CountdownAppDelegate.h */,
 				5069367E13E968210009D674 /* CountdownAppDelegate.m */,
 				5069368013E968210009D674 /* MainWindow.xib */,
-				5069368313E968210009D674 /* DateController.h */,
-				5069368413E968210009D674 /* DateController.m */,
-				5069368913E968210009D674 /* DateController.xib */,
-				507A794813EAF3DC00D01ED6 /* TimeController.h */,
-				507A794913EAF3DC00D01ED6 /* TimeController.m */,
-				507A794A13EAF3DC00D01ED6 /* TimeController.xib */,
-				5069368613E968210009D674 /* CountDownController.h */,
-				5069368713E968210009D674 /* CountDownController.m */,
-				5069368C13E968210009D674 /* CountDownController.xib */,
+				5069368313E968210009D674 /* FirstViewController.h */,
+				5069368413E968210009D674 /* FirstViewController.m */,
+				5069368613E968210009D674 /* SecondViewController.h */,
+				5069368713E968210009D674 /* SecondViewController.m */,
+				5069368913E968210009D674 /* FirstView.xib */,
+				5069368C13E968210009D674 /* SecondView.xib */,
 				5069367513E968210009D674 /* Supporting Files */,
 			);
 			path = Countdown;
@@ -240,9 +232,8 @@
 			files = (
 				5069367913E968210009D674 /* InfoPlist.strings in Resources */,
 				5069368213E968210009D674 /* MainWindow.xib in Resources */,
-				5069368B13E968210009D674 /* DateController.xib in Resources */,
-				5069368E13E968210009D674 /* CountDownController.xib in Resources */,
-				507A794C13EAF3DC00D01ED6 /* TimeController.xib in Resources */,
+				5069368B13E968210009D674 /* FirstView.xib in Resources */,
+				5069368E13E968210009D674 /* SecondView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +271,8 @@
 			files = (
 				5069367C13E968210009D674 /* main.m in Sources */,
 				5069367F13E968210009D674 /* CountdownAppDelegate.m in Sources */,
-				5069368513E968210009D674 /* DateController.m in Sources */,
-				5069368813E968210009D674 /* CountDownController.m in Sources */,
-				507A794B13EAF3DC00D01ED6 /* TimeController.m in Sources */,
+				5069368513E968210009D674 /* FirstViewController.m in Sources */,
+				5069368813E968210009D674 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,20 +311,20 @@
 			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
-		5069368913E968210009D674 /* DateController.xib */ = {
+		5069368913E968210009D674 /* FirstView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5069368A13E968210009D674 /* en */,
 			);
-			name = DateController.xib;
+			name = FirstView.xib;
 			sourceTree = "<group>";
 		};
-		5069368C13E968210009D674 /* CountDownController.xib */ = {
+		5069368C13E968210009D674 /* SecondView.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5069368D13E968210009D674 /* en */,
 			);
-			name = CountDownController.xib;
+			name = SecondView.xib;
 			sourceTree = "<group>";
 		};
 		5069369D13E968210009D674 /* InfoPlist.strings */ = {
@@ -352,7 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MR D GARCIA GOMES";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -360,8 +350,7 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DD7D8028-368D-4410-AF4A-5A54F36BD5ED";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -370,14 +359,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MR D GARCIA GOMES";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DD7D8028-368D-4410-AF4A-5A54F36BD5ED";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -473,7 +461,6 @@
 				506936A913E968210009D674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		506936AA13E968210009D674 /* Build configuration list for PBXNativeTarget "CountdownTests" */ = {
 			isa = XCConfigurationList;
@@ -482,7 +469,6 @@
 				506936AC13E968210009D674 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

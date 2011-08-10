@@ -26,8 +26,11 @@
 }
 
 - (IBAction)dateChanged:(id)sender {
+    NSDate *currentDate = [NSDate date];
+    
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"dateFormatted"];
-	
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
     NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
 	[dateformat setDateFormat:@"dd/MM/yyyy"];
     
@@ -35,13 +38,36 @@
     NSDate *pickerDate = picker.date;
     
     NSString *dateFormatted = [dateformat stringFromDate:pickerDate];
+    NSString *dateCheck = [NSString stringWithFormat:@"1"];
     
+    [[NSUserDefaults standardUserDefaults] setObject:currentDate forKey:@"currentDate"];
     [[NSUserDefaults standardUserDefaults] setObject:dateFormatted forKey:@"dateFormatted"];
+    [[NSUserDefaults standardUserDefaults] setObject:dateCheck forKey:@"dateCheck"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     userInputDate.text=dateFormatted;
-}
+    
+    NSDateFormatter *defaultTimeFormatter = [[NSDateFormatter alloc] init];
+    [defaultTimeFormatter setDateFormat:@"hh:mm a"];
 
+    NSString *defaultTimeString = [defaultTimeFormatter stringFromDate:currentDate];
+    
+    NSString *timeFormatted = [[NSUserDefaults standardUserDefaults] objectForKey:@"timeFormatted"];
+    NSString *timeCheck = [[NSUserDefaults standardUserDefaults] objectForKey:@"timeCheck"];  
+    
+    if (timeCheck == nil) {
+        timeFormatted = defaultTimeString;
+    }     
+        
+    else {
+        
+    }     
+
+    [[NSUserDefaults standardUserDefaults] setObject:timeFormatted forKey:@"timeFormatted"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+    
 -(IBAction)doCountdown:(id)sender {
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"inputDateTimeString"];
@@ -49,8 +75,9 @@
     
 	// formatting date and retrieving current date
     
-    NSDate *currentDate = [NSDate date];
-	NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
+    NSDate *currentDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentDate"];
+	
+    NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
 	[dateformat setDateFormat:@"dd/MM/yyyy"];
 
     NSDateFormatter *dateformatToCompare = [[NSDateFormatter alloc] init];
@@ -60,7 +87,7 @@
 	int unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     
     NSString *currentDateString = [dateformat stringFromDate:currentDate];
-        
+    
     NSString *dateFormatted = [[NSUserDefaults standardUserDefaults] objectForKey:@"dateFormatted"];
     NSString *timeFormatted = [[NSUserDefaults standardUserDefaults] objectForKey:@"timeFormatted"];
     

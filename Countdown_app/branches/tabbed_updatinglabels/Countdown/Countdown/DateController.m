@@ -1,71 +1,47 @@
 //
-//  TimeController.m
+//  DateController.m
 //  Countdown
 //
-//  Created by Daniel Gomes on 04/08/2011.
+//  Created by Daniel Gomes on 03/08/2011.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "TimeController.h"
+#import "DateController.h"
 
+@implementation DateController
+@synthesize userInputDate;
+@synthesize datePicker;
 
-@implementation TimeController
-@synthesize userInputTime;
-@synthesize timePicker;
+#pragma markstartofcode
 
 - (BOOL)textFieldShouldBeginEditing:
 
-(UITextField *)userInputTime { 
-    timePicker.hidden = NO; 
+    (UITextField *) userInputDate { 
+    datePicker.hidden = NO;
     return NO;
 }
 
 - (IBAction)dismissKeyboard:(id)sender {
-    timePicker.hidden = YES;  
+    datePicker.hidden = YES;  
 }
 
 - (IBAction)dateChanged:(id)sender {
-    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"timeFormatted"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    NSDate *currentDate = [NSDate date];
-    	
-    NSDateFormatter *timeformat = [[NSDateFormatter alloc] init];
-	[timeformat setDateFormat:@"hh:mm a"];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"dateFormatted"];
+	
+    NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
+	[dateformat setDateFormat:@"dd/MM/yyyy"];
     
     UIDatePicker *picker = (UIDatePicker *)sender;
-    NSDate *pickerTime = picker.date;
+    NSDate *pickerDate = picker.date;
     
-    NSString *timeFormatted = [timeformat stringFromDate:pickerTime];
-    NSString *timeCheck = [NSString stringWithFormat:@"1"];
-    
-    [[NSUserDefaults standardUserDefaults] setObject:timeFormatted forKey:@"timeFormatted"];
-    [[NSUserDefaults standardUserDefaults] setObject:timeCheck forKey:@"timeCheck"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    userInputTime.text=timeFormatted;
-    
-    NSDateFormatter *defaultDateFormatter = [[NSDateFormatter alloc] init];
-    [defaultDateFormatter setDateFormat:@"dd/MM/yyyy"];
-    
-    NSString *defaultDateString = [defaultDateFormatter stringFromDate:currentDate];
-    
-    NSString *dateFormatted = [[NSUserDefaults standardUserDefaults] objectForKey:@"dateFormatted"];
-    NSString *dateCheck = [[NSUserDefaults standardUserDefaults] objectForKey:@"dateCheck"];  
-    
-    if (dateCheck == nil) {
-        dateFormatted = defaultDateString;
-    }     
-    
-    else {
-        
-    }     
+    NSString *dateFormatted = [dateformat stringFromDate:pickerDate];
     
     [[NSUserDefaults standardUserDefaults] setObject:dateFormatted forKey:@"dateFormatted"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
+    userInputDate.text=dateFormatted;
 }
-    
+
 -(IBAction)doCountdown:(id)sender {
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"inputDateTimeString"];
@@ -73,10 +49,10 @@
     
 	// formatting date and retrieving current date
     
-    NSDate *currentDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentDate"];
+    NSDate *currentDate = [NSDate date];
 	NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
 	[dateformat setDateFormat:@"dd/MM/yyyy"];
-    
+
     NSDateFormatter *dateformatToCompare = [[NSDateFormatter alloc] init];
     [dateformatToCompare setDateFormat:@"dd/MM/yyyy hh:mm a"];
     
@@ -84,17 +60,17 @@
 	int unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     
     NSString *currentDateString = [dateformat stringFromDate:currentDate];
-    
+        
     NSString *dateFormatted = [[NSUserDefaults standardUserDefaults] objectForKey:@"dateFormatted"];
     NSString *timeFormatted = [[NSUserDefaults standardUserDefaults] objectForKey:@"timeFormatted"];
     
     NSString *inputDateTimeString = [NSString stringWithFormat:@"%@ %@", dateFormatted, timeFormatted];    
     
     NSDate *inputDateTime = [dateformatToCompare dateFromString:inputDateTimeString];
-    
+        
     // printing strings for test (just date)
     
-    userInputTime.text=timeFormatted;
+    userInputDate.text=dateFormatted;
     
     // storing strings
     
@@ -129,7 +105,7 @@
     NSString *labelHours = @"00";
     NSString *labelMinutes = @"00";
     NSString *labelSeconds = @"00";
-    
+        
     // switching the message
     
     switch (timetoGoYears) {
@@ -245,7 +221,7 @@
     }
     
     // displaying message
-    
+        
     NSString *messageYearsDisplay = [NSString stringWithFormat:@"%@", messageYears];
     NSString *messageMonthsDisplay = [NSString stringWithFormat:@"%@", messageMonths];
     NSString *messageDaysDisplay = [NSString stringWithFormat:@"%@", messageDays]; 
@@ -270,54 +246,55 @@
     [[NSUserDefaults standardUserDefaults] setObject:labelSeconds forKey:@"labelSeconds"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
-    
+
     [dateformat release];
     [dateformatToCompare release];
     [gregorian release];
     
 }
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+ 
+/*
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    [super viewDidLoad];
+}
+*/
+
+
+
+//- (IBAction)dismissKeyboard: (id)sender {
+//    [sender resignFirstResponder];
+//}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc
-{
-    [super dealloc];
-}
 
 - (void)didReceiveMemoryWarning
 {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
     
-    // Release any cached data, images, etc that aren't in use.
+    // Release any cached data, images, etc. that aren't in use.
 }
 
-#pragma mark - View lifecycle
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+
+- (void)dealloc
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    [super dealloc];
 }
 
 @end

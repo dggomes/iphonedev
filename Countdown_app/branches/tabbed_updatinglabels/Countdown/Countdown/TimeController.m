@@ -26,10 +26,7 @@
 
 - (IBAction)dateChanged:(id)sender {
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"timeFormatted"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
-    NSDate *currentDate = [NSDate date];
-    	
+	
     NSDateFormatter *timeformat = [[NSDateFormatter alloc] init];
 	[timeformat setDateFormat:@"hh:mm a"];
     
@@ -37,35 +34,14 @@
     NSDate *pickerTime = picker.date;
     
     NSString *timeFormatted = [timeformat stringFromDate:pickerTime];
-    NSString *timeCheck = [NSString stringWithFormat:@"1"];
     
     [[NSUserDefaults standardUserDefaults] setObject:timeFormatted forKey:@"timeFormatted"];
-    [[NSUserDefaults standardUserDefaults] setObject:timeCheck forKey:@"timeCheck"];
     [[NSUserDefaults standardUserDefaults] synchronize];
     
     userInputTime.text=timeFormatted;
     
-    NSDateFormatter *defaultDateFormatter = [[NSDateFormatter alloc] init];
-    [defaultDateFormatter setDateFormat:@"dd/MM/yyyy"];
-    
-    NSString *defaultDateString = [defaultDateFormatter stringFromDate:currentDate];
-    
-    NSString *dateFormatted = [[NSUserDefaults standardUserDefaults] objectForKey:@"dateFormatted"];
-    NSString *dateCheck = [[NSUserDefaults standardUserDefaults] objectForKey:@"dateCheck"];  
-    
-    if (dateCheck == nil) {
-        dateFormatted = defaultDateString;
-    }     
-    
-    else {
-        
-    }     
-    
-    [[NSUserDefaults standardUserDefaults] setObject:dateFormatted forKey:@"dateFormatted"];
-    [[NSUserDefaults standardUserDefaults] synchronize];
-    
 }
-    
+
 -(IBAction)doCountdown:(id)sender {
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"inputDateTimeString"];
@@ -73,7 +49,7 @@
     
 	// formatting date and retrieving current date
     
-    NSDate *currentDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentDate"];
+    NSDate *currentDate = [NSDate date];
 	NSDateFormatter *dateformat = [[NSDateFormatter alloc] init];
 	[dateformat setDateFormat:@"dd/MM/yyyy"];
     
