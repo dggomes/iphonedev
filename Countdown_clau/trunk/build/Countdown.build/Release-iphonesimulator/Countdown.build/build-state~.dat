@@ -1,0 +1,269 @@
+TCountdown
+v7
+r0
+t325899195.388942
+cCheck dependencies
+cProcessInfoPlistFile /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Info.plist Countdown-Info.plist
+cCompileXIB /Users/danielgomes/Development/Countdown/MainWindow.xib
+cCompileXIB /Users/danielgomes/Development/Countdown/CountdownViewController.xib
+cCpResource build/Release-iphonesimulator/Countdown.app/ams_bg.jpg ams_bg.jpg
+cProcessPCH /var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch.gch Countdown_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/main.o /Users/danielgomes/Development/Countdown/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownAppDelegate.o /Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownViewController.o /Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+
+N/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.h
+c000000004DBC6DA300000000000001EE
+t1304194467
+s494
+i<UIKit/UIKit.h>
+
+N/Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.m
+c000000004DBC6DA30000000000000AB7
+t1304194467
+s2743
+i"CountdownAppDelegate.h"
+i"CountdownViewController.h"
+
+N/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.h
+c000000004DBC9A2B00000000000001D1
+t1304205867
+s465
+i<UIKit/UIKit.h>
+
+N/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m
+c000000004DBC9A75000000000000195F
+t1304205941
+s6495
+i"CountdownViewController.h"
+
+N/Users/danielgomes/Development/Countdown/CountdownViewController.xib
+c000000004DBC9B56000000000000565B
+t1304206166
+s22107
+
+N/Users/danielgomes/Development/Countdown/Countdown_Prefix.pch
+c000000004DBC6DA300000000000000BB
+t1304194467
+s187
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/danielgomes/Development/Countdown/MainWindow.xib
+c000000004DBC6DA30000000000004E41
+t1304194467
+s20033
+
+N/Users/danielgomes/Development/Countdown/ams_bg.jpg
+c000000004DBC7C7D000000000000CD72
+t1304198269
+s52594
+
+N/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/Countdown.LinkFileList
+c000000004DBC9C3900000000000001A9
+t1304206393
+s425
+
+N/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownAppDelegate.o
+t1304206395
+s51168
+
+N/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownViewController.o
+t2
+s0
+
+N/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/main.o
+t1304206395
+s6328
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app
+t2
+s0
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app.dSYM
+t2
+s0
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Countdown
+t2
+s0
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/CountdownViewController.nib
+t1304206394
+s3344
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Info.plist
+t1304206393
+s599
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/MainWindow.nib
+t1304206394
+s1685
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/PkgInfo
+t1304206393
+s8
+
+N/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/ams_bg.jpg
+t1304206394
+s52594
+
+N/Users/danielgomes/Development/Countdown/main.m
+c000000004DBC6DA3000000000000016E
+t1304194467
+s366
+i<UIKit/UIKit.h>
+
+N/var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch.gch
+t1304206395
+s15465904
+
+NCountdown-Info.plist
+c000000004DBC6DA3000000000000038D
+t1304194467
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies325899193#325899193#0(0"0(0#1#0"8608644320#0"0#
+
+CCompileC build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownAppDelegate.o /Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s325899195.239820
+e325899195.364125
+r1
+xCompileC
+xbuild/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownAppDelegate.o
+x/Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.m325899195#325899195#0(0"0(0#0#71"/Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.m8607931520#2103"    cd /Users/danielgomes/Development/Countdown    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-generated-files.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-own-target-headers.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-all-target-headers.hmap -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-project-headers.hmap -F/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator -I/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/include -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources/i386 -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch -c /Users/danielgomes/Development/Countdown/Classes/CountdownAppDelegate.m -o /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownAppDelegate.o0#
+
+CCompileC build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownViewController.o /Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s325899195.313775
+e325899195.388866
+r0
+xCompileC
+xbuild/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownViewController.o
+x/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m: In function '-[CountdownViewController doAlert:]':
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: 'timeIntervalSinceDate' undeclared (first use in this function)
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: (Each undeclared identifier is reported only once
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: for each function it appears in.)
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: warning: comparison between pointer and integer
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: expected ';' before ')' token
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: expected statement before ')' token
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: no '-delegate:cancelButtonTitle:otherButtonTitles:' method found
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: (Messages without a matching method signature
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: will be assumed to return 'id' and accept
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: '...' as arguments.)
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:53: warning: unused variable 'components'
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:64: error: 'alert' undeclared (first use in this function)
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m: At top level:
+o/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:68: error: expected identifier or '(' before '}' token
+lSLF07#2@82"Compile /Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325899195#325899195#0(1895"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m: In function '-[CountdownViewController doAlert:]':/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: 'timeIntervalSinceDate' undeclared (first use in this function)/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: (Each undeclared identifier is reported only once/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: for each function it appears in.)/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: warning: comparison between pointer and integer/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: expected ';' before ')' token/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:52: error: expected statement before ')' token/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: no '-delegate:cancelButtonTitle:otherButtonTitles:' method found/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: (Messages without a matching method signature/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: will be assumed to return 'id' and accept/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:59: warning: '...' as arguments.)/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:53: warning: unused variable 'components'/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:64: error: 'alert' undeclared (first use in this function)/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m: At top level:/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m:68: error: expected identifier or '(' before '}' token10(4@63"'timeIntervalSinceDate' undeclared (first use in this function)325899195#127#150#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#52#0#52#0#43"'*' undeclared (first use in this function)0(22@38"Comparison between pointer and integer325899195#533#127#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#52#0#52#0#0"0(4@29"Expected ';' before ')' token325899195#660#116#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#52#0#52#0#19"expected * before *0(4@35"Expected statement before ')' token325899195#776#122#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#52#0#52#0#19"expected * before *0(22@64"No '-delegate:cancelButtonTitle:otherButtonTitles:' method found325899195#898#153#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#59#0#59#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)325899195#1051#134#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#59#0#59#0#0"0(22@28"Unused variable 'components'325899195#1424#117#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#53#0#53#0#19"unused variable '*'0(4@47"'alert' undeclared (first use in this function)325899195#1541#134#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#64#0#64#0#43"'*' undeclared (first use in this function)0(23@13"At top level:325899195#1675#90#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#0#0#0#0#0"0(4@43"Expected identifier or '(' before '}' token325899195#1765#130#0(6@74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m325898741#68#0#68#0#19"expected * before *0(0#0#74"/Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m8608851392#2109"    cd /Users/danielgomes/Development/Countdown    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-generated-files.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-own-target-headers.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-all-target-headers.hmap -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-project-headers.hmap -F/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator -I/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/include -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources/i386 -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch -c /Users/danielgomes/Development/Countdown/Classes/CountdownViewController.m -o /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/CountdownViewController.o1#
+
+CCompileC build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/main.o /Users/danielgomes/Development/Countdown/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s325899195.238787
+e325899195.313673
+r1
+xCompileC
+xbuild/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/main.o
+x/Users/danielgomes/Development/Countdown/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@55"Compile /Users/danielgomes/Development/Countdown/main.m325899195#325899195#0(0"0(0#0#47"/Users/danielgomes/Development/Countdown/main.m8607419808#2063"    cd /Users/danielgomes/Development/Countdown    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-generated-files.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-own-target-headers.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-all-target-headers.hmap -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-project-headers.hmap -F/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator -I/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/include -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources/i386 -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch -c /Users/danielgomes/Development/Countdown/main.m -o /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/danielgomes/Development/Countdown/CountdownViewController.xib
+s325899193.523404
+e325899194.131643
+r1
+xCompileXIB
+x/Users/danielgomes/Development/Countdown/CountdownViewController.xib
+lSLF07#2@38"CompileXIB CountdownViewController.xib325899193#325899194#0(0"0(0#0#68"/Users/danielgomes/Development/Countdown/CountdownViewController.xib8608699392#634"    cd /Users/danielgomes/Development/Countdown    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/CountdownViewController.nib /Users/danielgomes/Development/Countdown/CountdownViewController.xib --sdk /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/danielgomes/Development/Countdown/MainWindow.xib
+s325899193.522473
+e325899194.068538
+r1
+xCompileXIB
+x/Users/danielgomes/Development/Countdown/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib325899193#325899194#0(0"0(0#0#55"/Users/danielgomes/Development/Countdown/MainWindow.xib8608852704#608"    cd /Users/danielgomes/Development/Countdown    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode3/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/MainWindow.nib /Users/danielgomes/Development/Countdown/MainWindow.xib --sdk /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCpResource build/Release-iphonesimulator/Countdown.app/ams_bg.jpg ams_bg.jpg
+s325899194.068683
+e325899194.089579
+r1
+xCpResource
+xbuild/Release-iphonesimulator/Countdown.app/ams_bg.jpg
+xams_bg.jpg
+lSLF07#2@15"Copy ams_bg.jpg325899194#325899194#0(0"0(0#0#51"/Users/danielgomes/Development/Countdown/ams_bg.jpg8600264704#520"    cd /Users/danielgomes/Development/Countdown    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode3/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/danielgomes/Development/Countdown/ams_bg.jpg /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app0#
+
+CGenerateDSYMFile /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app.dSYM /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Countdown
+r0
+
+CLd /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Countdown normal i386
+r0
+
+CProcessInfoPlistFile /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Info.plist Countdown-Info.plist
+s325899193.508518
+e325899193.522384
+r1
+xProcessInfoPlistFile
+x/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Info.plist
+xCountdown-Info.plist
+lSLF07#2@28"Process Countdown-Info.plist325899193#325899193#0(0"0(0#0#61"/Users/danielgomes/Development/Countdown/Countdown-Info.plist12666807751213152#509"    cd /Users/danielgomes/Development/Countdown    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Countdown-Info.plist -genpkginfo /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app/Info.plist0#
+
+CProcessPCH /var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch.gch Countdown_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s325899194.131768
+e325899195.238625
+r1
+xProcessPCH
+x/var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch.gch
+xCountdown_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@31"Precompile Countdown_Prefix.pch325899194#325899195#0(0"0(0#0#61"/Users/danielgomes/Development/Countdown/Countdown_Prefix.pch8608530784#1949"    cd /Users/danielgomes/Development/Countdown    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/Xcode3/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Xcode3/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-generated-files.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-own-target-headers.hmap -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-all-target-headers.hmap -iquote /Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/Countdown-project-headers.hmap -F/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator -I/Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/include -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources/i386 -I/Users/danielgomes/Development/Countdown/build/Countdown.build/Release-iphonesimulator/Countdown.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/danielgomes/Development/Countdown/Countdown_Prefix.pch -o /var/folders/bf/bf4AIt7+Gk4RMbXxwJ1mbE+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Countdown_Prefix-baahfzjhjcdwgtabkplcfhfrxfjl/Countdown_Prefix.pch.gch0#
+
+CTouch /Users/danielgomes/Development/Countdown/build/Release-iphonesimulator/Countdown.app
+r0
+

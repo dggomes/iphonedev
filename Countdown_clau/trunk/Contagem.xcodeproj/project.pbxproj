@@ -19,13 +19,15 @@
 		50D38D1813714936002058F2 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50D38D1713714936002058F2 /* Entitlements.plist */; };
 		50EDAC2313F33F38003D654E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2113F33F38003D654E /* icon@2x.png */; };
 		50EDAC2413F33F38003D654E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2213F33F38003D654E /* icon.png */; };
+		50EDAC2913F346EC003D654E /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2713F346EC003D654E /* photo.png */; };
+		50EDAC2A13F346EC003D654E /* photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2813F346EC003D654E /* photo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* CountdownAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* CountdownAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* Countdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* Contagem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contagem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* CountdownViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountdownViewController.xib; sourceTree = "<group>"; };
@@ -33,12 +35,14 @@
 		28D7ACF60DDB3853001CB0EB /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		32CA4F630368D1EE00C91783 /* Countdown_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Countdown_Prefix.pch; sourceTree = "<group>"; };
-		501B731B137D9A010001F027 /* fundo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fundo.jpg; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Contagem_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contagem_Prefix.pch; sourceTree = "<group>"; };
+		501B731B137D9A010001F027 /* fundo.jpg */ = {isa = PBXFileReference; explicitFileType = image.jpeg; path = fundo.jpg; sourceTree = "<group>"; };
 		50D38D1713714936002058F2 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		50EDAC2113F33F38003D654E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		50EDAC2213F33F38003D654E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Countdown-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Countdown-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		50EDAC2713F346EC003D654E /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		50EDAC2813F346EC003D654E /* photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo@2x.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Countdown_Clau-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Countdown_Clau-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +73,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Countdown.app */,
+				1D6058910D05DD3D006BFB54 /* Contagem.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +94,7 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				32CA4F630368D1EE00C91783 /* Countdown_Prefix.pch */,
+				32CA4F630368D1EE00C91783 /* Contagem_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
 			name = "Other Sources";
@@ -101,10 +105,12 @@
 			children = (
 				50EDAC2113F33F38003D654E /* icon@2x.png */,
 				50EDAC2213F33F38003D654E /* icon.png */,
+				50EDAC2713F346EC003D654E /* photo.png */,
+				50EDAC2813F346EC003D654E /* photo@2x.png */,
 				501B731B137D9A010001F027 /* fundo.jpg */,
 				2899E5210DE3E06400AC0155 /* CountdownViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
-				8D1107310486CEB800E47090 /* Countdown-Info.plist */,
+				8D1107310486CEB800E47090 /* Countdown_Clau-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -122,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Countdown */ = {
+		1D6058900D05DD3D006BFB54 /* Contagem */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Countdown" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Contagem" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -134,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = Countdown;
+			name = Contagem;
 			productName = Countdown;
-			productReference = 1D6058910D05DD3D006BFB54 /* Countdown.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* Contagem.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +150,7 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Countdown" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Contagem" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -158,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Countdown */,
+				1D6058900D05DD3D006BFB54 /* Contagem */,
 			);
 		};
 /* End PBXProject section */
@@ -174,6 +180,8 @@
 				50D38D1813714936002058F2 /* Entitlements.plist in Resources */,
 				50EDAC2313F33F38003D654E /* icon@2x.png in Resources */,
 				50EDAC2413F33F38003D654E /* icon.png in Resources */,
+				50EDAC2913F346EC003D654E /* photo.png in Resources */,
+				50EDAC2A13F346EC003D654E /* photo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,11 +210,11 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Countdown_Prefix.pch;
-				INFOPLIST_FILE = "Countdown-Info.plist";
+				GCC_PREFIX_HEADER = Contagem_Prefix.pch;
+				INFOPLIST_FILE = "Countdown_Clau-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				PRODUCT_NAME = Countdown;
-				PROVISIONING_PROFILE = "C6E956D3-9A29-4440-A9FE-59124EC5C0F9";
+				PRODUCT_NAME = Contagem;
+				PROVISIONING_PROFILE = "3B8BE66A-0303-4EE8-ADB9-687EA5424244";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -218,11 +226,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: MR D GARCIA GOMES";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = Countdown_Prefix.pch;
-				INFOPLIST_FILE = "Countdown-Info.plist";
+				GCC_PREFIX_HEADER = Contagem_Prefix.pch;
+				INFOPLIST_FILE = "Countdown_Clau-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
-				PRODUCT_NAME = Countdown;
-				PROVISIONING_PROFILE = "C6E956D3-9A29-4440-A9FE-59124EC5C0F9";
+				PRODUCT_NAME = Contagem;
+				PROVISIONING_PROFILE = "3B8BE66A-0303-4EE8-ADB9-687EA5424244";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -264,7 +272,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Countdown" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Contagem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -273,7 +281,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Countdown" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Contagem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,

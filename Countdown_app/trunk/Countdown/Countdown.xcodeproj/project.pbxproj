@@ -386,12 +386,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MR D GARCIA GOMES";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Countdown/Countdown-Prefix.pch";
 				INFOPLIST_FILE = "Countdown/Countdown-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3B8BE66A-0303-4EE8-ADB9-687EA5424244";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,11 +402,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: MR D GARCIA GOMES";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Countdown/Countdown-Prefix.pch";
 				INFOPLIST_FILE = "Countdown/Countdown-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3B8BE66A-0303-4EE8-ADB9-687EA5424244";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

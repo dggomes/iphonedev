@@ -66,7 +66,7 @@
     
 }
     
--(IBAction)doCountdown:(id)sender {
+- (IBAction)doCountdown:(id)sender {
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"inputDateTimeString"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -271,6 +271,27 @@
     
     [[NSUserDefaults standardUserDefaults] synchronize];
     
+    // check if date is valid
+    
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"invalidDate"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    if (timetoGoDays <0 || timetoGoHours <0 || timetoGoMinutes <0){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Invalid date"
+                             message:[NSString stringWithFormat:@"The date can't be in the past"]
+                             delegate:nil
+                             cancelButtonTitle:@"Close"
+                             otherButtonTitles:nil];
+        NSString *invalidDate = @"1";
+        
+        [[NSUserDefaults standardUserDefaults] setObject:invalidDate forKey:@"invalidDate"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+        
+        [alert show];
+        [alert release];
+    }     
+    
     [dateformat release];
     [dateformatToCompare release];
     [gregorian release];
@@ -303,6 +324,7 @@
 
 - (void)viewDidLoad
 {
+    timePicker.date = [NSDate date];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

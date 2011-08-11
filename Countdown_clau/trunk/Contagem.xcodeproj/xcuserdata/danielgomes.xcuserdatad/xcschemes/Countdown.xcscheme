@@ -14,9 +14,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "Countdown.app"
-               BlueprintName = "Countdown"
-               ReferencedContainer = "container:Countdown.xcodeproj">
+               BuildableName = "Contagem.app"
+               BlueprintName = "Contagem"
+               ReferencedContainer = "container:Contagem.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -41,9 +41,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "Countdown.app"
-            BlueprintName = "Countdown"
-            ReferencedContainer = "container:Countdown.xcodeproj">
+            BuildableName = "Contagem.app"
+            BlueprintName = "Contagem"
+            ReferencedContainer = "container:Contagem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -60,9 +60,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "Countdown.app"
-            BlueprintName = "Countdown"
-            ReferencedContainer = "container:Countdown.xcodeproj">
+            BuildableName = "Contagem.app"
+            BlueprintName = "Contagem"
+            ReferencedContainer = "container:Contagem.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

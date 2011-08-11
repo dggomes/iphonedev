@@ -68,7 +68,7 @@
     
 }
     
--(IBAction)doCountdown:(id)sender {
+- (IBAction)doCountdown:(id)sender {
     
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"inputDateTimeString"];
     [[NSUserDefaults standardUserDefaults] synchronize];
@@ -273,22 +273,21 @@
     [[NSUserDefaults standardUserDefaults] setObject:labelSeconds forKey:@"labelSeconds"];
     
     [[NSUserDefaults standardUserDefaults] synchronize];
-
+        
     [dateformat release];
     [dateformatToCompare release];
     [gregorian release];
     
 }
- 
-/*
+
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    datePicker.minimumDate = [NSDate date];
+    datePicker.date = [NSDate date];
     [super viewDidLoad];
 }
-*/
-
-
 
 //- (IBAction)dismissKeyboard: (id)sender {
 //    [sender resignFirstResponder];

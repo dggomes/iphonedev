@@ -48,7 +48,27 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
+        
+    NSString *invalidDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"invalidDate"];
     
+    if (invalidDate == @"1"){
+//      img_invalidDate.hidden=NO;
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Invalid date"
+                             message:[NSString stringWithFormat:@"The date can't be in the past"]
+                             delegate:nil
+                             cancelButtonTitle:@"Close"
+                             otherButtonTitles:nil]; 
+        
+        [alert show];
+        [alert release];
+    }
+        
+    else {
+//      img_invalidDate.hidden=YES;
+                
+    }
+
     NSString *currentDateString = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentDateString"];
     
     NSString *inputDateTimeString = [[NSUserDefaults standardUserDefaults] objectForKey:@"inputDateTimeString"];
