@@ -348,9 +348,9 @@
         [alert release];
     }         
     
-    // rule7: >15 and <=30 days so > 1296000 and < 2592000 seconds
+    // rule7: >15 and <=30 days so > 604800 and < 2592000 seconds
     
-    else if ((timetoGoDaysinSeconds > 1296000)&&(timetoGoDaysinSeconds < 2592000)){
+    else if ((timetoGoDaysinSeconds > 604800)&&(timetoGoDaysinSeconds < 2592000)){
         UIAlertView*alert = [[UIAlertView alloc]
                              initWithTitle:@"Cada vez mais perto"
                              message:[NSString stringWithFormat:@"Só mais %02d dias", timetoGo.day]

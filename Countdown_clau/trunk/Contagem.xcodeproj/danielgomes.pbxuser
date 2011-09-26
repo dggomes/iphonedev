@@ -7,7 +7,7 @@
 			sepNavVisRange = "{0, 817}";
 		};
 	};
-	1D6058900D05DD3D006BFB54 /* Countdown */ = {
+	1D6058900D05DD3D006BFB54 /* Contagem */ = {
 		activeExec = 0;
 		executables = (
 			5087E9FB136CA52300EAF6E5 /* Countdown */,
@@ -22,18 +22,18 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1011, 4043}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 5876}}";
 			sepNavSelRange = "{4606, 0}";
-			sepNavVisRange = "{2930, 3259}";
+			sepNavVisRange = "{3795, 1965}";
 			sepNavWindowFrame = "{{38, 35}, {1211, 717}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Release;
 		activeExecutable = 5087E9FB136CA52300EAF6E5 /* Countdown */;
-		activeTarget = 1D6058900D05DD3D006BFB54 /* Countdown */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Contagem */;
 		addToTargets = (
-			1D6058900D05DD3D006BFB54 /* Countdown */,
+			1D6058900D05DD3D006BFB54 /* Contagem */,
 		);
 		codeSenseManager = 5087EA05136CA52C00EAF6E5 /* Code sense */;
 		executables = (
@@ -164,12 +164,12 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 326127938;
-			PBXWorkspaceStateSaveDate = 326127938;
+			PBXPerProjectTemplateStateSaveDate = 338737179;
+			PBXWorkspaceStateSaveDate = 338737179;
 		};
 		perUserProjectItems = {
 			501E97621370401E009D23C3 /* PBXTextBookmark */ = 501E97621370401E009D23C3 /* PBXTextBookmark */;
-			501E97641370401E009D23C3 /* PBXTextBookmark */ = 501E97641370401E009D23C3 /* PBXTextBookmark */;
+			503B8C721430B82C0075EA22 /* PBXTextBookmark */ = 503B8C721430B82C0075EA22 /* PBXTextBookmark */;
 			507416FB136D9664005EB21B /* PlistBookmark */ = 507416FB136D9664005EB21B /* PlistBookmark */;
 			507418BC13ABB611005EB21B /* PBXTextBookmark */ = 507418BC13ABB611005EB21B /* PBXTextBookmark */;
 			50981692136CD3EA000746C0 /* PBXBookmark */ = 50981692136CD3EA000746C0 /* PBXBookmark */;
@@ -189,19 +189,19 @@
 		vrLen = 924;
 		vrLoc = 0;
 	};
-	501E97641370401E009D23C3 /* PBXTextBookmark */ = {
+	503B8C721430B82C0075EA22 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */;
-		name = "CountdownViewController.m: 135";
+		name = "CountdownViewController.m: 131";
 		rLen = 0;
 		rLoc = 4606;
 		rType = 0;
-		vrLen = 3225;
-		vrLoc = 2930;
+		vrLen = 1965;
+		vrLoc = 3795;
 	};
 	507416FB136D9664005EB21B /* PlistBookmark */ = {
 		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* Countdown-Info.plist */;
+		fRef = 8D1107310486CEB800E47090 /* Countdown_Clau-Info.plist */;
 		fallbackIsa = PBXBookmark;
 		isK = 0;
 		kPath = (
@@ -264,7 +264,6 @@
 	};
 	50981692136CD3EA000746C0 /* PBXBookmark */ = {
 		isa = PBXBookmark;
-		fRef = 5087EA6E136CB41800EAF6E5 /* ams_bg.jpg */;
 	};
 	50AE121613705157001FAFE8 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

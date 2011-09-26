@@ -327,14 +327,14 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>50AE121613705157001FAFE8</string>
+										<string>503B8C721430B82C0075EA22</string>
 										<key>history</key>
 										<array>
 											<string>50981692136CD3EA000746C0</string>
 											<string>507416FB136D9664005EB21B</string>
 											<string>507418BC13ABB611005EB21B</string>
 											<string>501E97621370401E009D23C3</string>
-											<string>501E97641370401E009D23C3</string>
+											<string>50AE121613705157001FAFE8</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -346,14 +346,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1072, 606}}</string>
+								<string>{{0, 0}, {1072, 604}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>606pt</string>
+							<string>604pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -366,14 +366,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 611}, {1072, 67}}</string>
+								<string>{{0, 609}, {1072, 69}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1280 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>67pt</string>
+							<string>69pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -392,9 +392,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>50AE121413705154001FAFE8</string>
+				<string>503B8C6F1430B82C0075EA22</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>50AE121513705154001FAFE8</string>
+				<string>503B8C701430B82C0075EA22</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -532,10 +532,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>50AE120F1370514C001FAFE8</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>5087EA02136CA52C00EAF6E5</string>
-		<string>/Users/danielgomes/Development/Countdown/Countdown.xcodeproj</string>
+		<string>/Users/danielgomes/Development/_projects/Countdown_clau/trunk/Contagem.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 59 1280 719 0 0 1280 778 </string>
@@ -615,7 +613,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>5087EA02136CA52C00EAF6E5</string>
-				<string>50AE12071370514C001FAFE8</string>
+				<string>503B8C711430B82C0075EA22</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
