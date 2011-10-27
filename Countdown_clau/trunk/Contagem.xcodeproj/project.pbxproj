@@ -15,12 +15,12 @@
 		2899E5220DE3E06400AC0155 /* CountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* CountdownViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */; };
+		500BC79B145966BC0014B275 /* leye@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 500BC799145966BC0014B275 /* leye@2x.jpg */; };
+		500BC79C145966BC0014B275 /* leye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 500BC79A145966BC0014B275 /* leye.jpg */; };
 		501B731C137D9A010001F027 /* fundo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 501B731B137D9A010001F027 /* fundo.jpg */; };
 		50D38D1813714936002058F2 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50D38D1713714936002058F2 /* Entitlements.plist */; };
 		50EDAC2313F33F38003D654E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2113F33F38003D654E /* icon@2x.png */; };
 		50EDAC2413F33F38003D654E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2213F33F38003D654E /* icon.png */; };
-		50EDAC2913F346EC003D654E /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2713F346EC003D654E /* photo.png */; };
-		50EDAC2A13F346EC003D654E /* photo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EDAC2813F346EC003D654E /* photo@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +36,12 @@
 		28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Contagem_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contagem_Prefix.pch; sourceTree = "<group>"; };
+		500BC799145966BC0014B275 /* leye@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "leye@2x.jpg"; sourceTree = "<group>"; };
+		500BC79A145966BC0014B275 /* leye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leye.jpg; sourceTree = "<group>"; };
 		501B731B137D9A010001F027 /* fundo.jpg */ = {isa = PBXFileReference; explicitFileType = image.jpeg; path = fundo.jpg; sourceTree = "<group>"; };
 		50D38D1713714936002058F2 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		50EDAC2113F33F38003D654E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		50EDAC2213F33F38003D654E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		50EDAC2713F346EC003D654E /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
-		50EDAC2813F346EC003D654E /* photo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo@2x.png"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Countdown_Clau-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Countdown_Clau-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,10 +103,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				500BC799145966BC0014B275 /* leye@2x.jpg */,
+				500BC79A145966BC0014B275 /* leye.jpg */,
 				50EDAC2113F33F38003D654E /* icon@2x.png */,
 				50EDAC2213F33F38003D654E /* icon.png */,
-				50EDAC2713F346EC003D654E /* photo.png */,
-				50EDAC2813F346EC003D654E /* photo@2x.png */,
 				501B731B137D9A010001F027 /* fundo.jpg */,
 				2899E5210DE3E06400AC0155 /* CountdownViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
@@ -180,8 +180,8 @@
 				50D38D1813714936002058F2 /* Entitlements.plist in Resources */,
 				50EDAC2313F33F38003D654E /* icon@2x.png in Resources */,
 				50EDAC2413F33F38003D654E /* icon.png in Resources */,
-				50EDAC2913F346EC003D654E /* photo.png in Resources */,
-				50EDAC2A13F346EC003D654E /* photo@2x.png in Resources */,
+				500BC79B145966BC0014B275 /* leye@2x.jpg in Resources */,
+				500BC79C145966BC0014B275 /* leye.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +214,7 @@
 				INFOPLIST_FILE = "Countdown_Clau-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				PRODUCT_NAME = Contagem;
-				PROVISIONING_PROFILE = "3B8BE66A-0303-4EE8-ADB9-687EA5424244";
+				PROVISIONING_PROFILE = "29DA157C-1148-4555-8AC9-990AEA6C7738";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -230,7 +230,7 @@
 				INFOPLIST_FILE = "Countdown_Clau-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				PRODUCT_NAME = Contagem;
-				PROVISIONING_PROFILE = "3B8BE66A-0303-4EE8-ADB9-687EA5424244";
+				PROVISIONING_PROFILE = "29DA157C-1148-4555-8AC9-990AEA6C7738";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
