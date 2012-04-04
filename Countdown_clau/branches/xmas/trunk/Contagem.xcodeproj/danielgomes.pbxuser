@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	1D3623250D0F684500981E51 /* CountdownAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1118}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 817}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Contagem */ = {
+		activeExec = 0;
+		executables = (
+			5087E9FB136CA52300EAF6E5 /* Countdown */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* CountdownViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 429}}";
+			sepNavSelRange = "{763, 0}";
+			sepNavVisRange = "{0, 924}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 5876}}";
+			sepNavSelRange = "{4606, 0}";
+			sepNavVisRange = "{3795, 1965}";
+			sepNavWindowFrame = "{{38, 35}, {1211, 717}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 5087E9FB136CA52300EAF6E5 /* Countdown */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Contagem */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Contagem */,
+		);
+		codeSenseManager = 5087EA05136CA52C00EAF6E5 /* Code sense */;
+		executables = (
+			5087E9FB136CA52300EAF6E5 /* Countdown */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					200,
+					643,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					721,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					833,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					847,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					773,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.XCSCMDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					809,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_SCM_ColumnID,
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					793,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 338737179;
+			PBXWorkspaceStateSaveDate = 338737179;
+		};
+		perUserProjectItems = {
+			501E97621370401E009D23C3 /* PBXTextBookmark */ = 501E97621370401E009D23C3 /* PBXTextBookmark */;
+			503B8C721430B82C0075EA22 /* PBXTextBookmark */ = 503B8C721430B82C0075EA22 /* PBXTextBookmark */;
+			507416FB136D9664005EB21B /* PlistBookmark */ = 507416FB136D9664005EB21B /* PlistBookmark */;
+			507418BC13ABB611005EB21B /* PBXTextBookmark */ = 507418BC13ABB611005EB21B /* PBXTextBookmark */;
+			50981692136CD3EA000746C0 /* PBXBookmark */ = 50981692136CD3EA000746C0 /* PBXBookmark */;
+			50AE121613705157001FAFE8 /* PBXTextBookmark */ = 50AE121613705157001FAFE8 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 5087EA04136CA52C00EAF6E5 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	501E97621370401E009D23C3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* CountdownViewController.h */;
+		name = "CountdownViewController.h: 26";
+		rLen = 0;
+		rLoc = 763;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	503B8C721430B82C0075EA22 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */;
+		name = "CountdownViewController.m: 131";
+		rLen = 0;
+		rLoc = 4606;
+		rType = 0;
+		vrLen = 1965;
+		vrLoc = 3795;
+	};
+	507416FB136D9664005EB21B /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Countdown_Clau-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/danielgomes/Development/Countdown/Countdown-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	507418BC13ABB611005EB21B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CountdownAppDelegate.m */;
+		name = "CountdownAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 817;
+		vrLoc = 0;
+	};
+	5087E9FB136CA52300EAF6E5 /* Countdown */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Countdown;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	5087EA04136CA52C00EAF6E5 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	5087EA05136CA52C00EAF6E5 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	50981692136CD3EA000746C0 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+	};
+	50AE121613705157001FAFE8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* CountdownViewController.m */;
+		name = "CountdownViewController.m: 135";
+		rLen = 0;
+		rLoc = 4606;
+		rType = 0;
+		vrLen = 3259;
+		vrLoc = 2930;
+	};
+}
