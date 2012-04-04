@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>A8DL6A62QW.DGGOMES.Countdown</string>
+	<string>A8DL6A62QW.com.dggomes.countdown</string>
 	<key>get-task-allow</key>
 	<false/>
 </dict>

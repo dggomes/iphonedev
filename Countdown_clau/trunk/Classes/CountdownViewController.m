@@ -31,9 +31,9 @@
     
     // defining date to compare   
     
-    NSString *currentDateString = [dateformatToCompare stringFromDate:[NSDate date]];
+//    NSString *currentDateString = [dateformatToCompare stringFromDate:[NSDate date]];
     
-    NSString *arrivalDay = [[NSString alloc] initWithString:@"23/12/2011 11:20:00 AM"];
+    NSString *arrivalDay = [[NSString alloc] initWithString:@"07/04/2012 1:00:00 PM"];
     
     // converting string to date
     
@@ -75,9 +75,9 @@
     // IF RULES        
     
     
-    if ((timetoGoDaysinSeconds > 86400)){
+    if ((timetoGoDaysinSeconds > 1209600)){
         UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Ho Ho Ho!"
+                             initWithTitle:@"Falta um tempinho ainda, mas vai VOAR!!!"
                              message:[NSString stringWithFormat:@"%02d dias", timetoGo.day]
                              delegate:nil
                              cancelButtonTitle:@"Fechar"
@@ -88,21 +88,48 @@
     
     // rule2: <= 86400 seconds
     
-    else if ((timetoGoDaysinSeconds <= 86400)){
+    else if ((timetoGoDaysinSeconds <= 1209600) && (timetoGoDaysinSeconds > 604800)){
         UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Ho Ho Ho!"
-                             message:[NSString stringWithFormat:@"%02d horas", timetoGo.hour]
+                             initWithTitle:@"Duas semaninhas!!!"
+                             message:[NSString stringWithFormat:@"%02d dias", timetoGo.day]
                              delegate:nil
                              cancelButtonTitle:@"Fechar"
                              otherButtonTitles:nil];
         [alert show];
         [alert release];
-    }         
+    }
+    
+    // rule3: <= 86400 seconds
+    
+    else if ((timetoGoDaysinSeconds <= 604800) && (timetoGoDaysinSeconds > 86400)){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Agora já tá quase lá! Já vou preparar o carbonara!!!"
+                             message:[NSString stringWithFormat:@"%02d dias e %02d horas", timetoGo.day, timetoGo.hour]
+                             delegate:nil
+                             cancelButtonTitle:@"Fechar"
+                             otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    
+    // rule4: <= 86400 seconds
+    
+    else if ((timetoGoDaysinSeconds <= 86500) && (timetoGoDaysinSeconds > 0)){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Please proceed to the departure gate!!"
+                             message:[NSString stringWithFormat:@"%02d horas pra nos vermos", timetoGo.hour]
+                             delegate:nil
+                             cancelButtonTitle:@"Fechar"
+                             otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    
     // default rule
     
     else  { 
         UIAlertView*alert =[[UIAlertView alloc]
-                            initWithTitle:@"Ho Ho Ho!"
+                            initWithTitle:@"Te amo :)!"
                             message:nil
                             delegate:nil 
                             cancelButtonTitle:@"Fechar"
@@ -142,6 +169,7 @@
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
@@ -160,9 +188,9 @@
     
     // defining date to compare   
     
-    NSString *currentDateString = [dateformatToCompare stringFromDate:[NSDate date]];
+//    NSString *currentDateString = [dateformatToCompare stringFromDate:[NSDate date]];
     
-    NSString *arrivalDay = [[NSString alloc] initWithString:@"23/12/2011 11:20:00 AM"];
+    NSString *arrivalDay = [[NSString alloc] initWithString:@"07/04/2012 1:00:00 PM"];
     
     // converting string to date
     
@@ -204,9 +232,9 @@
     // IF RULES        
     
     
-    if ((timetoGoDaysinSeconds > 86400)){
+    if ((timetoGoDaysinSeconds > 1209600)){
         UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Ho Ho Ho!"
+                             initWithTitle:@"Falta um tempinho ainda, mas vai VOAR!!!"
                              message:[NSString stringWithFormat:@"%02d dias", timetoGo.day]
                              delegate:nil
                              cancelButtonTitle:@"Fechar"
@@ -217,21 +245,48 @@
     
     // rule2: <= 86400 seconds
     
-    else if ((timetoGoDaysinSeconds <= 86400)){
+    else if ((timetoGoDaysinSeconds <= 1209600) && (timetoGoDaysinSeconds > 604800)){
         UIAlertView*alert = [[UIAlertView alloc]
-                             initWithTitle:@"Ho Ho Ho!"
-                             message:[NSString stringWithFormat:@"%02d horas", timetoGo.hour]
+                             initWithTitle:@"Duas semaninhas!!!"
+                             message:[NSString stringWithFormat:@"%02d dias", timetoGo.day]
                              delegate:nil
                              cancelButtonTitle:@"Fechar"
                              otherButtonTitles:nil];
         [alert show];
         [alert release];
-    }         
-        // default rule
+    }
+    
+    // rule3: <= 86400 seconds
+    
+    else if ((timetoGoDaysinSeconds <= 604800) && (timetoGoDaysinSeconds > 86400)){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Agora já tá quase lá! Já vou preparar o carbonara!!!"
+                             message:[NSString stringWithFormat:@"%02d dias e %02d horas", timetoGo.day, timetoGo.hour]
+                             delegate:nil
+                             cancelButtonTitle:@"Fechar"
+                             otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    
+    // rule4: <= 86400 seconds
+    
+    else if ((timetoGoDaysinSeconds <= 86500) && (timetoGoDaysinSeconds > 0)){
+        UIAlertView*alert = [[UIAlertView alloc]
+                             initWithTitle:@"Please proceed to the departure gate!!"
+                             message:[NSString stringWithFormat:@"%02d horas pra nos vermos", timetoGo.hour]
+                             delegate:nil
+                             cancelButtonTitle:@"Fechar"
+                             otherButtonTitles:nil];
+        [alert show];
+        [alert release];
+    }
+    
+    // default rule
     
     else  { 
         UIAlertView*alert =[[UIAlertView alloc]
-                            initWithTitle:@"Ho Ho Ho!"
+                            initWithTitle:@"Te amo :)!"
                             message:nil
                             delegate:nil 
                             cancelButtonTitle:@"Fechar"
