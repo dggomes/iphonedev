@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5043C4FE152C9347007FE92E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5043C4FD152C9347007FE92E /* icon.png */; };
+		5043C500152C9352007FE92E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5043C4FF152C9352007FE92E /* icon@2x.png */; };
+		508BB36E152C42A20022A8A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BB36D152C42A20022A8A3 /* UIKit.framework */; };
+		508BB370152C42A20022A8A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BB36F152C42A20022A8A3 /* Foundation.framework */; };
+		508BB372152C42A20022A8A3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BB371152C42A20022A8A3 /* CoreGraphics.framework */; };
+		508BB378152C42A20022A8A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508BB376152C42A20022A8A3 /* InfoPlist.strings */; };
+		508BB37A152C42A20022A8A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BB379152C42A20022A8A3 /* main.m */; };
+		508BB37E152C42A20022A8A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BB37D152C42A20022A8A3 /* AppDelegate.m */; };
+		508BB381152C42A20022A8A3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 508BB37F152C42A20022A8A3 /* MainStoryboard.storyboard */; };
+		508BB384152C42A20022A8A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BB383152C42A20022A8A3 /* ViewController.m */; };
+		508BB38C152C42A20022A8A3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BB38B152C42A20022A8A3 /* SenTestingKit.framework */; };
+		508BB38D152C42A20022A8A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BB36D152C42A20022A8A3 /* UIKit.framework */; };
+		508BB38E152C42A20022A8A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508BB36F152C42A20022A8A3 /* Foundation.framework */; };
+		508BB396152C42A20022A8A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 508BB394152C42A20022A8A3 /* InfoPlist.strings */; };
+		508BB399152C42A20022A8A3 /* LondonMarathonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 508BB398152C42A20022A8A3 /* LondonMarathonTests.m */; };
+		508BB3B0152C821C0022A8A3 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 508BB3AC152C821C0022A8A3 /* bg.png */; };
+		508BB3B1152C821C0022A8A3 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 508BB3AD152C821C0022A8A3 /* bg@2x.png */; };
+		508BB3B2152C821C0022A8A3 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 508BB3AE152C821C0022A8A3 /* button.png */; };
+		508BB3B3152C821C0022A8A3 /* button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 508BB3AF152C821C0022A8A3 /* button@2x.png */; };
+		50F19A93152C88C10077D679 /* League_Gothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 50F19A92152C88C10077D679 /* League_Gothic.otf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		508BB38F152C42A20022A8A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 508BB360152C42A10022A8A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 508BB368152C42A20022A8A3;
+			remoteInfo = LondonMarathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5043C4FD152C9347007FE92E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		5043C4FF152C9352007FE92E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		508BB369152C42A20022A8A3 /* LondonMarathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonMarathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		508BB36D152C42A20022A8A3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		508BB36F152C42A20022A8A3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		508BB371152C42A20022A8A3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		508BB375152C42A20022A8A3 /* LondonMarathon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LondonMarathon-Info.plist"; sourceTree = "<group>"; };
+		508BB377152C42A20022A8A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		508BB379152C42A20022A8A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		508BB37B152C42A20022A8A3 /* LondonMarathon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LondonMarathon-Prefix.pch"; sourceTree = "<group>"; };
+		508BB37C152C42A20022A8A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		508BB37D152C42A20022A8A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		508BB380152C42A20022A8A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		508BB382152C42A20022A8A3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		508BB383152C42A20022A8A3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		508BB38A152C42A20022A8A3 /* LondonMarathonTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LondonMarathonTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		508BB38B152C42A20022A8A3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		508BB393152C42A20022A8A3 /* LondonMarathonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LondonMarathonTests-Info.plist"; sourceTree = "<group>"; };
+		508BB395152C42A20022A8A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		508BB397152C42A20022A8A3 /* LondonMarathonTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LondonMarathonTests.h; sourceTree = "<group>"; };
+		508BB398152C42A20022A8A3 /* LondonMarathonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LondonMarathonTests.m; sourceTree = "<group>"; };
+		508BB3AC152C821C0022A8A3 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		508BB3AD152C821C0022A8A3 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		508BB3AE152C821C0022A8A3 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		508BB3AF152C821C0022A8A3 /* button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button@2x.png"; sourceTree = "<group>"; };
+		50F19A92152C88C10077D679 /* League_Gothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = League_Gothic.otf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		508BB366152C42A20022A8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BB36E152C42A20022A8A3 /* UIKit.framework in Frameworks */,
+				508BB370152C42A20022A8A3 /* Foundation.framework in Frameworks */,
+				508BB372152C42A20022A8A3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508BB386152C42A20022A8A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BB38C152C42A20022A8A3 /* SenTestingKit.framework in Frameworks */,
+				508BB38D152C42A20022A8A3 /* UIKit.framework in Frameworks */,
+				508BB38E152C42A20022A8A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		508BB35E152C42A10022A8A3 = {
+			isa = PBXGroup;
+			children = (
+				5043C4FF152C9352007FE92E /* icon@2x.png */,
+				5043C4FD152C9347007FE92E /* icon.png */,
+				508BB373152C42A20022A8A3 /* LondonMarathon */,
+				508BB391152C42A20022A8A3 /* LondonMarathonTests */,
+				508BB36C152C42A20022A8A3 /* Frameworks */,
+				508BB36A152C42A20022A8A3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		508BB36A152C42A20022A8A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				508BB369152C42A20022A8A3 /* LondonMarathon.app */,
+				508BB38A152C42A20022A8A3 /* LondonMarathonTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		508BB36C152C42A20022A8A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				508BB36D152C42A20022A8A3 /* UIKit.framework */,
+				508BB36F152C42A20022A8A3 /* Foundation.framework */,
+				508BB371152C42A20022A8A3 /* CoreGraphics.framework */,
+				508BB38B152C42A20022A8A3 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		508BB373152C42A20022A8A3 /* LondonMarathon */ = {
+			isa = PBXGroup;
+			children = (
+				508BB3AB152C821C0022A8A3 /* assets */,
+				508BB37C152C42A20022A8A3 /* AppDelegate.h */,
+				508BB37D152C42A20022A8A3 /* AppDelegate.m */,
+				508BB37F152C42A20022A8A3 /* MainStoryboard.storyboard */,
+				508BB382152C42A20022A8A3 /* ViewController.h */,
+				508BB383152C42A20022A8A3 /* ViewController.m */,
+				508BB374152C42A20022A8A3 /* Supporting Files */,
+			);
+			path = LondonMarathon;
+			sourceTree = "<group>";
+		};
+		508BB374152C42A20022A8A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				508BB375152C42A20022A8A3 /* LondonMarathon-Info.plist */,
+				50F19A92152C88C10077D679 /* League_Gothic.otf */,
+				508BB376152C42A20022A8A3 /* InfoPlist.strings */,
+				508BB379152C42A20022A8A3 /* main.m */,
+				508BB37B152C42A20022A8A3 /* LondonMarathon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		508BB391152C42A20022A8A3 /* LondonMarathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				508BB397152C42A20022A8A3 /* LondonMarathonTests.h */,
+				508BB398152C42A20022A8A3 /* LondonMarathonTests.m */,
+				508BB392152C42A20022A8A3 /* Supporting Files */,
+			);
+			path = LondonMarathonTests;
+			sourceTree = "<group>";
+		};
+		508BB392152C42A20022A8A3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				508BB393152C42A20022A8A3 /* LondonMarathonTests-Info.plist */,
+				508BB394152C42A20022A8A3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		508BB3AB152C821C0022A8A3 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				508BB3AC152C821C0022A8A3 /* bg.png */,
+				508BB3AD152C821C0022A8A3 /* bg@2x.png */,
+				508BB3AE152C821C0022A8A3 /* button.png */,
+				508BB3AF152C821C0022A8A3 /* button@2x.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		508BB368152C42A20022A8A3 /* LondonMarathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508BB39C152C42A20022A8A3 /* Build configuration list for PBXNativeTarget "LondonMarathon" */;
+			buildPhases = (
+				508BB365152C42A20022A8A3 /* Sources */,
+				508BB366152C42A20022A8A3 /* Frameworks */,
+				508BB367152C42A20022A8A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LondonMarathon;
+			productName = LondonMarathon;
+			productReference = 508BB369152C42A20022A8A3 /* LondonMarathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		508BB389152C42A20022A8A3 /* LondonMarathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 508BB39F152C42A20022A8A3 /* Build configuration list for PBXNativeTarget "LondonMarathonTests" */;
+			buildPhases = (
+				508BB385152C42A20022A8A3 /* Sources */,
+				508BB386152C42A20022A8A3 /* Frameworks */,
+				508BB387152C42A20022A8A3 /* Resources */,
+				508BB388152C42A20022A8A3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				508BB390152C42A20022A8A3 /* PBXTargetDependency */,
+			);
+			name = LondonMarathonTests;
+			productName = LondonMarathonTests;
+			productReference = 508BB38A152C42A20022A8A3 /* LondonMarathonTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		508BB360152C42A10022A8A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 508BB363152C42A10022A8A3 /* Build configuration list for PBXProject "LondonMarathon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 508BB35E152C42A10022A8A3;
+			productRefGroup = 508BB36A152C42A20022A8A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				508BB368152C42A20022A8A3 /* LondonMarathon */,
+				508BB389152C42A20022A8A3 /* LondonMarathonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		508BB367152C42A20022A8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BB378152C42A20022A8A3 /* InfoPlist.strings in Resources */,
+				508BB381152C42A20022A8A3 /* MainStoryboard.storyboard in Resources */,
+				508BB3B0152C821C0022A8A3 /* bg.png in Resources */,
+				508BB3B1152C821C0022A8A3 /* bg@2x.png in Resources */,
+				508BB3B2152C821C0022A8A3 /* button.png in Resources */,
+				508BB3B3152C821C0022A8A3 /* button@2x.png in Resources */,
+				50F19A93152C88C10077D679 /* League_Gothic.otf in Resources */,
+				5043C4FE152C9347007FE92E /* icon.png in Resources */,
+				5043C500152C9352007FE92E /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508BB387152C42A20022A8A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BB396152C42A20022A8A3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		508BB388152C42A20022A8A3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		508BB365152C42A20022A8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BB37A152C42A20022A8A3 /* main.m in Sources */,
+				508BB37E152C42A20022A8A3 /* AppDelegate.m in Sources */,
+				508BB384152C42A20022A8A3 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		508BB385152C42A20022A8A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				508BB399152C42A20022A8A3 /* LondonMarathonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		508BB390152C42A20022A8A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 508BB368152C42A20022A8A3 /* LondonMarathon */;
+			targetProxy = 508BB38F152C42A20022A8A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		508BB376152C42A20022A8A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508BB377152C42A20022A8A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		508BB37F152C42A20022A8A3 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508BB380152C42A20022A8A3 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		508BB394152C42A20022A8A3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				508BB395152C42A20022A8A3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		508BB39A152C42A20022A8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		508BB39B152C42A20022A8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		508BB39D152C42A20022A8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MR D GARCIA GOMES";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LondonMarathon/LondonMarathon-Prefix.pch";
+				INFOPLIST_FILE = "LondonMarathon/LondonMarathon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E21BEDDC-355A-402F-82BF-97A6DF3B2FD1";
+				SDKROOT = iphoneos5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		508BB39E152C42A20022A8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: MR D GARCIA GOMES";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LondonMarathon/LondonMarathon-Prefix.pch";
+				INFOPLIST_FILE = "LondonMarathon/LondonMarathon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E21BEDDC-355A-402F-82BF-97A6DF3B2FD1";
+				SDKROOT = iphoneos5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		508BB3A0152C42A20022A8A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LondonMarathon.app/LondonMarathon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LondonMarathon/LondonMarathon-Prefix.pch";
+				INFOPLIST_FILE = "LondonMarathonTests/LondonMarathonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		508BB3A1152C42A20022A8A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LondonMarathon.app/LondonMarathon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LondonMarathon/LondonMarathon-Prefix.pch";
+				INFOPLIST_FILE = "LondonMarathonTests/LondonMarathonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		508BB363152C42A10022A8A3 /* Build configuration list for PBXProject "LondonMarathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508BB39A152C42A20022A8A3 /* Debug */,
+				508BB39B152C42A20022A8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508BB39C152C42A20022A8A3 /* Build configuration list for PBXNativeTarget "LondonMarathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508BB39D152C42A20022A8A3 /* Debug */,
+				508BB39E152C42A20022A8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		508BB39F152C42A20022A8A3 /* Build configuration list for PBXNativeTarget "LondonMarathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				508BB3A0152C42A20022A8A3 /* Debug */,
+				508BB3A1152C42A20022A8A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 508BB360152C42A10022A8A3 /* Project object */;
+}
