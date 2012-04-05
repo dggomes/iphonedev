@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50458B1414D04597000992D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50458B1314D04597000992D7 /* UIKit.framework */; };
+		50458B1614D04597000992D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50458B1514D04597000992D7 /* Foundation.framework */; };
+		50458B1814D04597000992D7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50458B1714D04597000992D7 /* CoreGraphics.framework */; };
+		50458B1E14D04597000992D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50458B1C14D04597000992D7 /* InfoPlist.strings */; };
+		50458B2014D04597000992D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50458B1F14D04597000992D7 /* main.m */; };
+		50458B2414D04597000992D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50458B2314D04597000992D7 /* AppDelegate.m */; };
+		50458B2C14D04597000992D7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50458B2B14D04597000992D7 /* SenTestingKit.framework */; };
+		50458B2D14D04597000992D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50458B1314D04597000992D7 /* UIKit.framework */; };
+		50458B2E14D04597000992D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50458B1514D04597000992D7 /* Foundation.framework */; };
+		50458B3614D04597000992D7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50458B3414D04597000992D7 /* InfoPlist.strings */; };
+		50458B3914D04597000992D7 /* OSCAR2012Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 50458B3814D04597000992D7 /* OSCAR2012Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50458B2F14D04597000992D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50458B0614D04596000992D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50458B0E14D04597000992D7;
+			remoteInfo = OSCAR2012;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50458B0F14D04597000992D7 /* OSCAR2012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSCAR2012.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50458B1314D04597000992D7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		50458B1514D04597000992D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		50458B1714D04597000992D7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50458B1B14D04597000992D7 /* OSCAR2012-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSCAR2012-Info.plist"; sourceTree = "<group>"; };
+		50458B1D14D04597000992D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50458B1F14D04597000992D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50458B2114D04597000992D7 /* OSCAR2012-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSCAR2012-Prefix.pch"; sourceTree = "<group>"; };
+		50458B2214D04597000992D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50458B2314D04597000992D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50458B2A14D04597000992D7 /* OSCAR2012Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCAR2012Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50458B2B14D04597000992D7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		50458B3314D04597000992D7 /* OSCAR2012Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSCAR2012Tests-Info.plist"; sourceTree = "<group>"; };
+		50458B3514D04597000992D7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		50458B3714D04597000992D7 /* OSCAR2012Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSCAR2012Tests.h; sourceTree = "<group>"; };
+		50458B3814D04597000992D7 /* OSCAR2012Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OSCAR2012Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50458B0C14D04597000992D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50458B1414D04597000992D7 /* UIKit.framework in Frameworks */,
+				50458B1614D04597000992D7 /* Foundation.framework in Frameworks */,
+				50458B1814D04597000992D7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50458B2614D04597000992D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50458B2C14D04597000992D7 /* SenTestingKit.framework in Frameworks */,
+				50458B2D14D04597000992D7 /* UIKit.framework in Frameworks */,
+				50458B2E14D04597000992D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50458B0414D04596000992D7 = {
+			isa = PBXGroup;
+			children = (
+				50458B1914D04597000992D7 /* OSCAR2012 */,
+				50458B3114D04597000992D7 /* OSCAR2012Tests */,
+				50458B1214D04597000992D7 /* Frameworks */,
+				50458B1014D04597000992D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50458B1014D04597000992D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50458B0F14D04597000992D7 /* OSCAR2012.app */,
+				50458B2A14D04597000992D7 /* OSCAR2012Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50458B1214D04597000992D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50458B1314D04597000992D7 /* UIKit.framework */,
+				50458B1514D04597000992D7 /* Foundation.framework */,
+				50458B1714D04597000992D7 /* CoreGraphics.framework */,
+				50458B2B14D04597000992D7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50458B1914D04597000992D7 /* OSCAR2012 */ = {
+			isa = PBXGroup;
+			children = (
+				50458B2214D04597000992D7 /* AppDelegate.h */,
+				50458B2314D04597000992D7 /* AppDelegate.m */,
+				50458B1A14D04597000992D7 /* Supporting Files */,
+			);
+			path = OSCAR2012;
+			sourceTree = "<group>";
+		};
+		50458B1A14D04597000992D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50458B1B14D04597000992D7 /* OSCAR2012-Info.plist */,
+				50458B1C14D04597000992D7 /* InfoPlist.strings */,
+				50458B1F14D04597000992D7 /* main.m */,
+				50458B2114D04597000992D7 /* OSCAR2012-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50458B3114D04597000992D7 /* OSCAR2012Tests */ = {
+			isa = PBXGroup;
+			children = (
+				50458B3714D04597000992D7 /* OSCAR2012Tests.h */,
+				50458B3814D04597000992D7 /* OSCAR2012Tests.m */,
+				50458B3214D04597000992D7 /* Supporting Files */,
+			);
+			path = OSCAR2012Tests;
+			sourceTree = "<group>";
+		};
+		50458B3214D04597000992D7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50458B3314D04597000992D7 /* OSCAR2012Tests-Info.plist */,
+				50458B3414D04597000992D7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50458B0E14D04597000992D7 /* OSCAR2012 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50458B3C14D04597000992D7 /* Build configuration list for PBXNativeTarget "OSCAR2012" */;
+			buildPhases = (
+				50458B0B14D04597000992D7 /* Sources */,
+				50458B0C14D04597000992D7 /* Frameworks */,
+				50458B0D14D04597000992D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSCAR2012;
+			productName = OSCAR2012;
+			productReference = 50458B0F14D04597000992D7 /* OSCAR2012.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50458B2914D04597000992D7 /* OSCAR2012Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50458B3F14D04597000992D7 /* Build configuration list for PBXNativeTarget "OSCAR2012Tests" */;
+			buildPhases = (
+				50458B2514D04597000992D7 /* Sources */,
+				50458B2614D04597000992D7 /* Frameworks */,
+				50458B2714D04597000992D7 /* Resources */,
+				50458B2814D04597000992D7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50458B3014D04597000992D7 /* PBXTargetDependency */,
+			);
+			name = OSCAR2012Tests;
+			productName = OSCAR2012Tests;
+			productReference = 50458B2A14D04597000992D7 /* OSCAR2012Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50458B0614D04596000992D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 50458B0914D04596000992D7 /* Build configuration list for PBXProject "OSCAR2012" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50458B0414D04596000992D7;
+			productRefGroup = 50458B1014D04597000992D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50458B0E14D04597000992D7 /* OSCAR2012 */,
+				50458B2914D04597000992D7 /* OSCAR2012Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50458B0D14D04597000992D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50458B1E14D04597000992D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50458B2714D04597000992D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50458B3614D04597000992D7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50458B2814D04597000992D7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50458B0B14D04597000992D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50458B2014D04597000992D7 /* main.m in Sources */,
+				50458B2414D04597000992D7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50458B2514D04597000992D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50458B3914D04597000992D7 /* OSCAR2012Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50458B3014D04597000992D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50458B0E14D04597000992D7 /* OSCAR2012 */;
+			targetProxy = 50458B2F14D04597000992D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50458B1C14D04597000992D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50458B1D14D04597000992D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		50458B3414D04597000992D7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50458B3514D04597000992D7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50458B3A14D04597000992D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50458B3B14D04597000992D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50458B3D14D04597000992D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCAR2012/OSCAR2012-Prefix.pch";
+				INFOPLIST_FILE = "OSCAR2012/OSCAR2012-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		50458B3E14D04597000992D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCAR2012/OSCAR2012-Prefix.pch";
+				INFOPLIST_FILE = "OSCAR2012/OSCAR2012-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		50458B4014D04597000992D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSCAR2012.app/OSCAR2012";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCAR2012/OSCAR2012-Prefix.pch";
+				INFOPLIST_FILE = "OSCAR2012Tests/OSCAR2012Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		50458B4114D04597000992D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OSCAR2012.app/OSCAR2012";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSCAR2012/OSCAR2012-Prefix.pch";
+				INFOPLIST_FILE = "OSCAR2012Tests/OSCAR2012Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50458B0914D04596000992D7 /* Build configuration list for PBXProject "OSCAR2012" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50458B3A14D04597000992D7 /* Debug */,
+				50458B3B14D04597000992D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50458B3C14D04597000992D7 /* Build configuration list for PBXNativeTarget "OSCAR2012" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50458B3D14D04597000992D7 /* Debug */,
+				50458B3E14D04597000992D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50458B3F14D04597000992D7 /* Build configuration list for PBXNativeTarget "OSCAR2012Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50458B4014D04597000992D7 /* Debug */,
+				50458B4114D04597000992D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50458B0614D04596000992D7 /* Project object */;
+}

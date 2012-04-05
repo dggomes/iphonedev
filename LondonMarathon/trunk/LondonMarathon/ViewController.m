@@ -10,16 +10,16 @@
 
 @implementation ViewController
 
-@synthesize currentDateLabel;
-@synthesize countdownDateLabel;
+// @synthesize currentDateLabel;
+// @synthesize countdownDateLabel;
 @synthesize displayLabelDays;
 @synthesize displayLabelHours;
 @synthesize displayLabelMinutes;
 @synthesize displayLabelSeconds;
-@synthesize labelDays;
-@synthesize labelHours;
-@synthesize labelMinutes;
-@synthesize labelSeconds;
+// @synthesize labelDays;
+// @synthesize labelHours;
+// @synthesize labelMinutes;
+// @synthesize labelSeconds;
 
 -(IBAction)donate;{
 
@@ -174,10 +174,10 @@
     displayLabelHours.text=messageHours;
     displayLabelMinutes.text=messageMinutes;
     displayLabelSeconds.text=messageSeconds;
-    labelDays.text=labelDaysString;
-    labelHours.text=labelHoursString;
-    labelMinutes.text=labelMinutesString;
-    labelSeconds.text=labelSecondsString;
+//    labelDays.text=labelDaysString;
+//    labelHours.text=labelHoursString;
+//    labelMinutes.text=labelMinutesString;
+//    labelSeconds.text=labelSecondsString;
 }
 
 - (void)viewDidLoad
